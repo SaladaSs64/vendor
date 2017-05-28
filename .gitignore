@@ -1,309 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.zui.cameragallery" platformBuildVersionCode="24" platformBuildVersionName="7.0">
-    <permission android:name="com.zui.cameragallery.gallery.permission.WRITE_GALLERY_DATA"/>
-    <permission android:name="com.zui.cameragallery.gallery.permission.READ_GALLERY_DATA"/>
-    <permission android:name="com.zui.cameragallery.gallery.app.START_GALLERY_PRELOADSERVICE"/>
-    <uses-permission android:name="android.permission.READ_SMS"/>
-    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS"/>
-    <uses-permission android:name="com.zui.safecenter.permission.READ_LESAFE_DATA"/>
-    <uses-permission android:name="com.zui.safecenter.permission.WRITE_LESAFE_DATA"/>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-    <uses-permission android:name="android.permission.CAMERA"/>
-    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
-    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
-    <uses-permission android:name="android.permission.NFC"/>
-    <uses-permission android:name="android.permission.READ_CONTACTS"/>
-    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"/>
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
-    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
-    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
-    <uses-permission android:name="android.permission.SUBSCRIBED_FEEDS_READ"/>
-    <uses-permission android:name="android.permission.SUBSCRIBED_FEEDS_WRITE"/>
-    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
-    <uses-permission android:name="android.permission.VIBRATE"/>
-    <uses-permission android:name="android.permission.WAKE_LOCK"/>
-    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
-    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="com.zui.xlog.service"/>
-    <uses-permission android:name="android.permission.GAT_TASKS"/>
-    <uses-permission android:name="com.zui.cameragallery.gallery.permission.WRITE_GALLERY_DATA"/>
-    <uses-permission android:name="com.zui.cameragallery.gallery.permission.READ_GALLERY_DATA"/>
-    <uses-permission android:name="android.permission.WAKE_LOCK"/>
-    <uses-permission android:name="android.permission.DEVICE_POWER"/>
-    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="false"/>
-    <application android:hardwareAccelerated="true" android:icon="@drawable/logo_camera_color_44in48dp" android:label="@string/app_name" android:largeHeap="true" android:name="com.zui.cameragallery.camera.app.CameraApp" android:restoreAnyVersion="true" android:supportsRtl="true" android:theme="@style/Theme.Camera">
-        <activity android:clearTaskOnLaunch="true" android:configChanges="keyboardHidden|mcc|mnc|orientation|screenSize" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.zui.cameragallery.camera.CameraActivity" android:resizeableActivity="false" android:screenOrientation="portrait" android:taskAffinity="com.zui.cameragallery.camera.CameraActivity" android:theme="@style/Theme.Camera" android:windowSoftInputMode="stateAlwaysHidden|adjustPan">
-            <intent-filter>
-                <action android:name="android.media.action.STILL_IMAGE_CAMERA"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
-            <meta-data android:name="com.android.keyguard.layout" android:resource="@layout/keyguard_widget"/>
-        </activity>
-        <activity-alias android:label="@string/app_name" android:name="com.zui.cameragallery.camera.ImageCamera" android:resizeableActivity="false" android:targetActivity="com.zui.cameragallery.camera.CameraActivity">
-            <intent-filter>
-                <action android:name="android.media.action.IMAGE_CAPTURE"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
-        </activity-alias>
-        <activity-alias android:label="@string/video_camera_label" android:name="com.zui.cameragallery.camera.VideoCamera" android:resizeableActivity="false" android:targetActivity="com.zui.cameragallery.camera.CameraActivity">
-            <intent-filter>
-                <action android:name="android.media.action.VIDEO_CAMERA"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.media.action.VIDEO_CAPTURE"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
-        </activity-alias>
-        <activity android:clearTaskOnLaunch="true" android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:label="@string/app_name" android:name="com.zui.cameragallery.camera.SecureCameraActivity" android:resizeableActivity="false" android:screenOrientation="portrait" android:taskAffinity="com.zui.cameragallery.camera.SecureCameraActivity" android:theme="@style/Theme.Camera" android:windowSoftInputMode="stateAlwaysHidden|adjustPan">
-            <intent-filter>
-                <action android:name="android.media.action.STILL_IMAGE_CAMERA_SECURE"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.media.action.IMAGE_CAPTURE_SECURE"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
-            <meta-data android:name="com.android.keyguard.layout" android:resource="@layout/keyguard_widget"/>
-        </activity>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.zui.cameragallery.camera.settings.SettingsPreferenceActivity" android:screenOrientation="portrait" android:theme="@style/Theme.CameraSettings">
-            <intent-filter>
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
-        </activity>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/mode_settings" android:name="com.zui.cameragallery.camera.settings.CameraSettingsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.CameraSettings">
-            <intent-filter>
-                <action android:name="lenovo.intent.action.SYSTEM_APP_SETTINGS"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
-            <meta-data android:name="settings_label" android:resource="@string/mode_settings"/>
-            <meta-data android:name="settings_icon" android:resource="@drawable/logo_camera_color_44in48dp"/>
-        </activity>
-        <receiver android:name="com.zui.cameragallery.camera.DisableCameraReceiver">
-            <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED"/>
-            </intent-filter>
-        </receiver>
-        <activity android:label="@string/app_name" android:name="com.morpho.app.panorama_gp.PanoramaActivity" android:resizeableActivity="false" android:screenOrientation="portrait"/>
-        <activity android:label="@string/app_name" android:name="com.morpho.app.panorama_gp.ReplayActivity" android:resizeableActivity="false"/>
-        <activity android:name="com.morpho.app.panorama_gp.PanoramaPreference" android:resizeableActivity="false"/>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:icon="@drawable/gallery_video_icn" android:label="@string/movie_view_label" android:name="com.zui.cameragallery.gallery.app.MovieActivity" android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW"/>
-                <action android:name="com.zui.cameragallery.gallery.intent.action.VIEW"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-                <category android:name="android.intent.category.BROWSABLE"/>
-                <data android:scheme="file"/>
-                <data android:scheme="content"/>
-                <data android:scheme="http"/>
-                <data android:scheme="https"/>
-                <data android:scheme="ftp"/>
-                <data android:host="*"/>
-                <data android:pathPattern=".*\\.VOB"/>
-                <data android:pathPattern=".*\\.vob"/>
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW"/>
-                <action android:name="com.zui.cameragallery.gallery.intent.action.VIEW"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-                <category android:name="android.intent.category.BROWSABLE"/>
-                <data android:scheme="http"/>
-                <data android:scheme="https"/>
-                <data android:scheme="content"/>
-                <data android:scheme="file"/>
-                <data android:mimeType="video/mpeg4"/>
-                <data android:mimeType="video/mp4"/>
-                <data android:mimeType="video/3gp"/>
-                <data android:mimeType="video/3gpp"/>
-                <data android:mimeType="video/3gpp2"/>
-                <data android:mimeType="video/webm"/>
-                <data android:mimeType="video/avi"/>
-                <data android:mimeType="video/x-matroska"/>
-                <data android:mimeType="application/sdp"/>
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-                <category android:name="android.intent.category.BROWSABLE"/>
-                <data android:scheme="http"/>
-                <data android:scheme="https"/>
-                <data android:mimeType="audio/x-mpegurl"/>
-                <data android:mimeType="audio/mpegurl"/>
-                <data android:mimeType="application/vnd.apple.mpegurl"/>
-                <data android:mimeType="application/x-mpegurl"/>
-            </intent-filter>
-        </activity>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:icon="@mipmap/ic_launcher_gallery" android:label="@string/gallery_app_name" android:name="com.zui.cameragallery.gallery.app.GalleryActivity" android:theme="@style/Theme.Gallery" android:windowSoftInputMode="adjustResize">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
-                <category android:name="android.intent.category.APP_GALLERY"/>
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.GET_CONTENT"/>
-                <category android:name="android.intent.category.OPENABLE"/>
-                <data android:mimeType="vnd.android.cursor.dir/image"/>
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.GET_CONTENT"/>
-                <category android:name="android.intent.category.OPENABLE"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-                <data android:mimeType="image/*"/>
-                <data android:mimeType="video/*"/>
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.PICK"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-                <data android:mimeType="image/*"/>
-                <data android:mimeType="video/*"/>
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.PICK"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-                <data android:mimeType="vnd.android.cursor.dir/image"/>
-                <data android:mimeType="vnd.android.cursor.dir/video"/>
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-                <data android:mimeType="vnd.android.cursor.dir/image"/>
-                <data android:mimeType="vnd.android.cursor.dir/video"/>
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW"/>
-                <action android:name="com.android.camera.action.REVIEW"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-                <category android:name="android.intent.category.BROWSABLE"/>
-                <data android:scheme=""/>
-                <data android:scheme="http"/>
-                <data android:scheme="https"/>
-                <data android:scheme="content"/>
-                <data android:scheme="file"/>
-                <data android:mimeType="image/bmp"/>
-                <data android:mimeType="image/jpeg"/>
-                <data android:mimeType="image/gif"/>
-                <data android:mimeType="image/png"/>
-                <data android:mimeType="image/webp"/>
-                <data android:mimeType="image/x-ms-bmp"/>
-                <data android:mimeType="image/vnd.wap.wbmp"/>
-                <data android:mimeType="application/vnd.google.panorama360+jpg"/>
-                <data android:mimeType="image/x-adobe-dng"/>
-                <data android:mimeType="image/x-canon-cr2"/>
-                <data android:mimeType="image/x-nikon-nef"/>
-                <data android:mimeType="image/x-nikon-nrw"/>
-                <data android:mimeType="image/x-sony-arw"/>
-                <data android:mimeType="image/x-panasonic-rw2"/>
-                <data android:mimeType="image/x-olympus-orf"/>
-                <data android:mimeType="image/x-fuji-raf"/>
-                <data android:mimeType="image/x-pentax-pef"/>
-                <data android:mimeType="image/x-samsung-srw"/>
-            </intent-filter>
-            <intent-filter>
-                <action android:name="com.android.camera.action.REVIEW"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-                <category android:name="android.intent.category.BROWSABLE"/>
-                <data android:scheme="http"/>
-                <data android:scheme="https"/>
-                <data android:scheme="content"/>
-                <data android:scheme="file"/>
-                <data android:mimeType="video/mpeg4"/>
-                <data android:mimeType="video/mp4"/>
-                <data android:mimeType="video/3gp"/>
-                <data android:mimeType="video/3gpp"/>
-                <data android:mimeType="video/3gpp2"/>
-                <data android:mimeType="application/sdp"/>
-            </intent-filter>
-            <intent-filter>
-                <action android:name="com.zui.cameragallery.gallery.action.GET_CONTENT"/>
-                <category android:name="android.intent.category.OPENABLE"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-                <data android:mimeType="image/*"/>
-                <data android:mimeType="video/*"/>
-            </intent-filter>
-        </activity>
-        <activity android:name="com.zui.cameragallery.gallery.app.Gallery" android:theme="@android:style/Theme.NoDisplay">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
-        </activity>
-        <activity-alias android:configChanges="keyboardHidden|orientation|screenSize" android:icon="@mipmap/ic_launcher_gallery" android:label="@string/gallery_app_name" android:name="com.cooliris.media.Gallery" android:targetActivity="com.zui.cameragallery.gallery.app.GalleryActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-            </intent-filter>
-        </activity-alias>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:icon="@drawable/maps" android:name="com.zui.cameragallery.gallery.app.Wallpaper" android:theme="@android:style/Theme.Translucent.NoTitleBar">
-            <intent-filter android:label="@string/camera_setas_wallpaper">
-                <action android:name="android.intent.action.ATTACH_DATA"/>
-                <data android:mimeType="image/*"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
-            <intent-filter android:label="@string/app_name">
-                <action android:name="android.intent.action.SET_WALLPAPER"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
-            <meta-data android:name="android.wallpaper.preview" android:resource="@xml/wallpaper_picker_preview"/>
-        </activity>
-        <provider android:authorities="com.zui.cameragallery.gallery.filtershow.provider.SharedImageProvider" android:grantUriPermissions="true" android:name="com.zui.cameragallery.gallery.filtershow.provider.SharedImageProvider" android:readPermission="com.zui.cameragallery.gallery.filtershow.permission.READ" android:writePermission="com.zui.cameragallery.gallery.filtershow.permission.WRITE"/>
-        <service android:exported="false" android:name="com.zui.cameragallery.gallery.filtershow.pipeline.ProcessingService"/>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/title_activity_filter_show" android:name="com.zui.cameragallery.gallery.filtershow.FilterShowActivity" android:resizeableActivity="false" android:screenOrientation="portrait" android:theme="@style/Theme.FilterShow">
-            <intent-filter>
-                <action android:name="android.intent.action.EDIT"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-                <data android:mimeType="image/*"/>
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.PHOTO_EDIT"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-                <data android:mimeType="image/*"/>
-            </intent-filter>
-            <intent-filter>
-                <action android:name="action_nextgen_edit"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-                <data android:mimeType="image/*"/>
-            </intent-filter>
-        </activity>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="false" android:name="com.zui.cameragallery.gallery.ui.mosaic.MosaicActivity" android:resizeableActivity="false" android:screenOrientation="portrait" android:theme="@style/Theme.FilterShow"/>
-        <activity android:hardwareAccelerated="false" android:name="com.zui.cameragallery.gallery.app.GifPlayerActivity" android:theme="@style/Theme.Gallery.Gif"/>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/crop" android:name="com.zui.cameragallery.gallery.filtershow.crop.CropActivity" android:resizeableActivity="false" android:theme="@style/Theme.Crop"/>
-        <uses-library android:name="com.google.android.media.effects" android:required="false"/>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.zui.cameragallery.gallery.app.DialogPicker" android:theme="@style/DialogPickerTheme"/>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.zui.cameragallery.gallery.app.AlbumPicker" android:theme="@style/DialogPickerTheme"/>
-        <activity android:name="com.zui.cameragallery.gallery.app.SlowVideoEditActivity" android:resizeableActivity="false" android:theme="@style/Theme.FilterShow"/>
-        <activity android:name="com.zui.cameragallery.gallery.app.Best4KVideoSelectActivity" android:resizeableActivity="false" android:theme="@style/Theme.FilterShow"/>
-        <activity android:name="com.zui.cameragallery.gallery.app.NormalVideoTrimActivity" android:resizeableActivity="false" android:theme="@style/Theme.FilterShow"/>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.zui.cameragallery.gallery.app.SlowVideoPlayActivity" android:resizeableActivity="false" android:theme="@style/Theme.FilterShow" android:windowSoftInputMode="adjustResize"/>
-        <service android:exported="false" android:name="com.zui.cameragallery.gallery.app.BatchService"/>
-        <provider android:authorities="com.zui.cameragallery.gallery" android:exported="true" android:name="com.zui.cameragallery.gallery.database.GalleryProvider2" android:readPermission="com.zui.cameragallery.gallery.permission.READ_GALLERY_DATA" android:writePermission="com.zui.cameragallery.gallery.permission.WRITE_GALLERY_DATA"/>
-        <service android:exported="false" android:name="com.zui.cameragallery.gallery.app.service.GalleryPreLoadService" android:permission="com.zui.cameragallery.gallery.app.START_GALLERY_PRELOADSERVICE">
-            <intent-filter>
-                <action android:name="com.zui.gallyer.service.start"/>
-            </intent-filter>
-            <intent-filter>
-                <action android:name="com.zui.gallyer.service.stop"/>
-            </intent-filter>
-            <intent-filter>
-                <action android:name="com.zui.gallyer.service.task"/>
-            </intent-filter>
-        </service>
-        <receiver android:name="com.zui.cameragallery.gallery.app.service.GalleryBootReceiver">
-            <intent-filter>
-                <action android:name="android.hardware.action.NEW_PICTURE"/>
-                <data android:mimeType="image/*"/>
-            </intent-filter>
-        </receiver>
-    </application>
-</manifest>
+褸 ゼ Ñ     ͠      4 R v   ¶ Ô ð Ě Ħ Ĵ Ŋ Ű Ɗ Ƙ ƾ ǜ Ǹ Ȑ ȶ ɞ ʈ ʜ ʼ ˤ ˴ ̀ ̚ ̮ ͈ Ͳ Β δ ψ Ϝ ϴ І ў Ѣ Ѵ Ҩ Ӝ Ӱ Ԟ ԰ Ը Ղ Ֆ א و ۈ ۪ ܤ ݮ ߎ ࠰ ࢆ ࣘ प ॶ ব ৸ ਺ ੴ ઼ ૬ ର ୾ ௔ ఖ ౚ ಮ ഄ ൌ ඄ ව ฆ ๖ ຬ ༀ ༬ ཨ ྪ ࿎ ࿨ ၀ ၔ Ⴎ ჌ ნ ᄮ ᅂ ᆄ ᆼ ሀ ሖ ቐ ተ ዄ ጌ ፠ Ꭶ Ꮾ ᑔ ᒴ ᔊ ᖎ ᘊ ᙞ ᙾ ᚜ ᚰ ᜘ ᝤ ើ ᠔ ᡲ ᣔ ᤌ ᥰ ᦶ ᧂ ᧎ ᧠ ᧬ ᧺ ᨄ ᨊ ᨜ ᨮ ᩈ ᩞ ᩴ ᪌ ᪦ ᪾ ᫔ ᫸ ᬚ ᬼ ᭚ ᮘ ᯆ ᰬ ᱶ ᲼ ᴀ ᴼ ᵎ ᵠ ᶘ ᷔ Ḙ Ḯ Ṇ Ṝ Ṳ Ẋ Ẫ Ồ ἢ Ὀ Ὦ ᾔ Ὰ ῞ ‌ ‶ ⁚ ₂ € ℐ Ⅶ ↞ ⇸ ∾ ⊈ ⊾ ⋒ ⍠ ⏔ ⑊ ⑜ ⓦ ╠ ▘ ◜ ☆ ♶ ⛠ ❘ ❴ ➸ ⠘ ⡶ ⣨ ⥢ ⧘ ⩊ ⪪ ⬜ ⭚ ⯜ Ⱊ ⱖ Ⲓ ⴐ versionCode versionName 
+minSdkVersion targetSdkVersion name 
+anyDensity largeScreens 
+normalScreens smallScreens hardwareAccelerated icon label 	largeHeap restoreAnyVersion supportsRtl theme clearTaskOnLaunch 
+configChanges taskAffinity 
+launchMode screenOrientation resizeableActivity windowSoftInputMode resource targetActivity excludeFromRecents scheme host pathPattern mimeType authorities grantUriPermissions readPermission writePermission exported required 
+permission android *http://schemas.android.com/apk/res/android   package platformBuildVersionCode platformBuildVersionName manifest com.zui.cameragallery 0.9.0.0 24 7.0 uses-sdk ;com.zui.cameragallery.gallery.permission.WRITE_GALLERY_DATA :com.zui.cameragallery.gallery.permission.READ_GALLERY_DATA >com.zui.cameragallery.gallery.app.START_GALLERY_PRELOADSERVICE uses-permission android.permission.READ_SMS #android.permission.MANAGE_DOCUMENTS .com.zui.safecenter.permission.READ_LESAFE_DATA /com.zui.safecenter.permission.WRITE_LESAFE_DATA )android.permission.ACCESS_COARSE_LOCATION 'android.permission.ACCESS_FINE_LOCATION 'android.permission.ACCESS_NETWORK_STATE $android.permission.ACCESS_WIFI_STATE android.permission.CAMERA $android.permission.CHANGE_WIFI_STATE android.permission.GET_ACCOUNTS android.permission.INTERNET "android.permission.MANAGE_ACCOUNTS android.permission.NFC  android.permission.READ_CONTACTS %android.permission.READ_SYNC_SETTINGS )android.permission.RECEIVE_BOOT_COMPLETED android.permission.RECORD_AUDIO  android.permission.SET_WALLPAPER (android.permission.SUBSCRIBED_FEEDS_READ )android.permission.SUBSCRIBED_FEEDS_WRITE "android.permission.USE_CREDENTIALS android.permission.VIBRATE android.permission.WAKE_LOCK !android.permission.WRITE_SETTINGS &android.permission.WRITE_SYNC_SETTINGS )android.permission.WRITE_EXTERNAL_STORAGE (android.permission.READ_EXTERNAL_STORAGE com.zui.xlog.service android.permission.GAT_TASKS android.permission.DEVICE_POWER supports-screens application *com.zui.cameragallery.camera.app.CameraApp activity +com.zui.cameragallery.camera.CameraActivity 
+intent-filter action 'android.media.action.STILL_IMAGE_CAMERA category android.intent.category.DEFAULT android.intent.action.MAIN  android.intent.category.LAUNCHER 	meta-data com.android.keyguard.layout activity-alias (com.zui.cameragallery.camera.ImageCamera "android.media.action.IMAGE_CAPTURE (com.zui.cameragallery.camera.VideoCamera !android.media.action.VIDEO_CAMERA "android.media.action.VIDEO_CAPTURE 1com.zui.cameragallery.camera.SecureCameraActivity .android.media.action.STILL_IMAGE_CAMERA_SECURE )android.media.action.IMAGE_CAPTURE_SECURE @com.zui.cameragallery.camera.settings.SettingsPreferenceActivity <com.zui.cameragallery.camera.settings.CameraSettingsActivity (lenovo.intent.action.SYSTEM_APP_SETTINGS settings_label 
+settings_icon receiver 2com.zui.cameragallery.camera.DisableCameraReceiver $android.intent.action.BOOT_COMPLETED +com.morpho.app.panorama_gp.PanoramaActivity )com.morpho.app.panorama_gp.ReplayActivity -com.morpho.app.panorama_gp.PanoramaPreference /com.zui.cameragallery.gallery.app.MovieActivity android.intent.action.VIEW 0com.zui.cameragallery.gallery.intent.action.VIEW !android.intent.category.BROWSABLE data file content http https ftp * .*\.VOB .*\.vob video/mpeg4 	video/mp4 	video/3gp 
+video/3gpp video/3gpp2 
+video/webm 	video/avi video/x-matroska application/sdp audio/x-mpegurl 
+audio/mpegurl application/vnd.apple.mpegurl application/x-mpegurl 1com.zui.cameragallery.gallery.app.GalleryActivity #android.intent.category.APP_GALLERY !android.intent.action.GET_CONTENT  android.intent.category.OPENABLE vnd.android.cursor.dir/image image/* video/* android.intent.action.PICK vnd.android.cursor.dir/video  com.android.camera.action.REVIEW 	image/bmp 
+image/jpeg 	image/gif 	image/png 
+image/webp image/x-ms-bmp image/vnd.wap.wbmp &application/vnd.google.panorama360+jpg image/x-adobe-dng image/x-canon-cr2 image/x-nikon-nef image/x-nikon-nrw image/x-sony-arw image/x-panasonic-rw2 image/x-olympus-orf image/x-fuji-raf image/x-pentax-pef image/x-samsung-srw 0com.zui.cameragallery.gallery.action.GET_CONTENT )com.zui.cameragallery.gallery.app.Gallery com.cooliris.media.Gallery +com.zui.cameragallery.gallery.app.Wallpaper !android.intent.action.ATTACH_DATA #android.intent.action.SET_WALLPAPER android.wallpaper.preview provider Ecom.zui.cameragallery.gallery.filtershow.provider.SharedImageProvider 8com.zui.cameragallery.gallery.filtershow.permission.READ 9com.zui.cameragallery.gallery.filtershow.permission.WRITE service Ccom.zui.cameragallery.gallery.filtershow.pipeline.ProcessingService ;com.zui.cameragallery.gallery.filtershow.FilterShowActivity android.intent.action.EDIT  android.intent.action.PHOTO_EDIT action_nextgen_edit 6com.zui.cameragallery.gallery.ui.mosaic.MosaicActivity 3com.zui.cameragallery.gallery.app.GifPlayerActivity :com.zui.cameragallery.gallery.filtershow.crop.CropActivity uses-library  com.google.android.media.effects .com.zui.cameragallery.gallery.app.DialogPicker -com.zui.cameragallery.gallery.app.AlbumPicker 7com.zui.cameragallery.gallery.app.SlowVideoEditActivity ;com.zui.cameragallery.gallery.app.Best4KVideoSelectActivity 9com.zui.cameragallery.gallery.app.NormalVideoTrimActivity 7com.zui.cameragallery.gallery.app.SlowVideoPlayActivity .com.zui.cameragallery.gallery.app.BatchService 7com.zui.cameragallery.gallery.database.GalleryProvider2 com.zui.cameragallery.gallery ?com.zui.cameragallery.gallery.app.service.GalleryPreLoadService com.zui.gallyer.service.start com.zui.gallyer.service.stop com.zui.gallyer.service.task =com.zui.cameragallery.gallery.app.service.GalleryBootReceiver #android.hardware.action.NEW_PICTURE  ƀ țāȜāȌāɰāāɬāʆāʅāʄā˓āāā͚āʺāίā āāāāāāӶāȫā%āȂāā'ā(ā,ā&āāāāāāʎāāĀ  ￿￿% & Ă  ￿￿￿￿+    &   ￿￿က &  - ̀- ￿￿( , ̀, ￿￿) . က ￿￿* / Ѐ 䃠ĂL 	 ￿￿￿￿0    &  ￿￿က &  ￿￿က ă  ￿￿￿￿0 Ă8  ￿￿￿￿$    &  1 ̀1 ă  ￿￿￿￿$ Ă8  ￿￿￿￿$    &  2 ̀2 ă  ￿￿￿￿$ Ă8  ￿￿￿￿$    &  3 ̀3 ă  ￿￿￿￿$ Ă8  ￿￿￿￿4    &  5 ̀5 ă  ￿￿￿￿4 Ă8  ￿￿￿￿4    &  6 ̀6 ă  ￿￿￿￿4 Ă8  ￿￿￿￿4    &  7 ̀7 ă  ￿￿￿￿4 Ă8  ￿￿￿￿4    &  8 ̀8 ă  ￿￿￿￿4 Ă8  ￿￿￿￿4    &  9 ̀9 ă  ￿￿￿￿4 Ă8  ￿￿￿￿4    &  : ̀: ă  ￿￿￿￿4 Ă8  ￿￿￿￿4    &  ; ̀; ă  ￿￿￿￿4 Ă8  ￿￿￿￿4    &  < ̀< ă  ￿￿￿￿4 Ă8 # ￿￿￿￿4    &  = ̀= ă # ￿￿￿￿4 Ă8 $ ￿￿￿￿4    &  > ̀> ă $ ￿￿￿￿4 Ă8 % ￿￿￿￿4    &  ? ̀? ă % ￿￿￿￿4 Ă8 & ￿￿￿￿4    &  @ ̀@ ă & ￿￿￿￿4 Ă8 ' ￿￿￿￿4    &  A ̀A ă ' ￿￿￿￿4 Ă8 ( ￿￿￿￿4    &  B ̀B ă ( ￿￿￿￿4 Ă8 ) ￿￿￿￿4    &  C ̀C ă ) ￿￿￿￿4 Ă8 * ￿￿￿￿4    &  D ̀D ă * ￿￿￿￿4 Ă8 + ￿￿￿￿4    &  E ̀E ă + ￿￿￿￿4 Ă8 , ￿￿￿￿4    &  F ̀F ă , ￿￿￿￿4 Ă8 - ￿￿￿￿4    &  G ̀G ă - ￿￿￿￿4 Ă8 . ￿￿￿￿4    &  H ̀H ă . ￿￿￿￿4 Ă8 / ￿￿￿￿4    &  I ̀I ă / ￿￿￿￿4 Ă8 0 ￿￿￿￿4    &  J ̀J ă 0 ￿￿￿￿4 Ă8 1 ￿￿￿￿4    &  K ̀K ă 1 ￿￿￿￿4 Ă8 2 ￿￿￿￿4    &  L ̀L ă 2 ￿￿￿￿4 Ă8 3 ￿￿￿￿4    &  M ̀M ă 3 ￿￿￿￿4 Ă8 4 ￿￿￿￿4    &  N ̀N ă 4 ￿￿￿￿4 Ă8 8 ￿￿￿￿4    &  O ̀O ă 8 ￿￿￿￿4 Ă8 9 ￿￿￿￿4    &  P ̀P ă 9 ￿￿￿￿4 Ă8 : ￿￿￿￿4    &  Q ̀Q ă : ￿￿￿￿4 Ă8 ; ￿￿￿￿4    &  R ̀R ă ; ￿￿￿￿4 Ă8 < ￿￿￿￿4    &  1 ̀1 ă < ￿￿￿￿4 Ă8 = ￿￿￿￿4    &  2 ̀2 ă = ￿￿￿￿4 Ă8 > ￿￿￿￿4    &  L ̀L ă > ￿￿￿￿4 Ă8 @ ￿￿￿￿4    &  S ̀S ă @ ￿￿￿￿4 Ăt C ￿￿￿￿T    &  ￿￿ሀ￿￿&  ￿￿ሀ  &  ￿￿ሀ￿￿&  ￿￿ሀ￿￿ă G ￿￿￿￿T ĂÄ I ￿￿￿￿U    &  ￿￿Ā缏&  ￿￿Ā缎& 
+ ￿￿Ā͋缂&  V ̀V & 
+ ￿￿ሀ￿￿& 	 ￿￿ሀ￿￿&  ￿￿ሀ￿￿&  ￿￿ሀ￿￿Ăì S ￿￿￿￿W 
+   &  ￿￿Ā缏&  ￿￿Ā缎&  X ̀X &  X ̀X &  ￿￿ሀ￿￿&  ￿￿က &  ￿￿က &  ￿￿ᄀң &  ￿￿ᄀ# &  ￿￿ሀ  Ă$ ^ ￿￿￿￿Y     Ă8 _ ￿￿￿￿Z    &  [ ̀[ ă _ ￿￿￿￿Z Ă8 ` ￿￿￿￿\    &  ] ̀] ă ` ￿￿￿￿\ ă a ￿￿￿￿Y Ă$ b ￿￿￿￿Y     Ă8 c ￿￿￿￿Z    &  ^ ̀^ ă c ￿￿￿￿Z Ă8 d ￿￿￿￿\    &  ] ̀] ă d ￿￿￿￿\ Ă8 e ￿￿￿￿\    &  _ ̀_ ă e ￿￿￿￿\ ă f ￿￿￿￿Y ĂL h ￿￿￿￿`    &  a ̀a &  ￿￿ĀX缄ă j ￿￿￿￿` ă k ￿￿￿￿W Ăt m ￿￿￿￿b    &  ￿￿Ā缎&  c ̀c &  X ̀X &  ￿￿ሀ  Ă$ r ￿￿￿￿Y     Ă8 s ￿￿￿￿Z    &  d ̀d ă s ￿￿￿￿Z Ă8 t ￿￿￿￿\    &  ] ̀] ă t ￿￿￿￿\ ă u ￿￿￿￿Y ă v ￿￿￿￿b Ăt y ￿￿￿￿b    &  ￿￿Ā缎&  e ̀e &  X ̀X &  ￿￿ሀ  Ă$ ~ ￿￿￿￿Y     Ă8  ￿￿￿￿Z    &  f ̀f ă  ￿￿￿￿Z Ă8  ￿￿￿￿\    &  ] ̀] ă  ￿￿￿￿\ ă  ￿￿￿￿Y Ă$  ￿￿￿￿Y     Ă8  ￿￿￿￿Z    &  g ̀g ă  ￿￿￿￿Z Ă8  ￿￿￿￿\    &  ] ̀] ă  ￿￿￿￿\ ă  ￿￿￿￿Y ă  ￿￿￿￿b Ăì  ￿￿￿￿W 
+   &  ￿￿Ā缏&  ￿￿Ā缎&  h ̀h &  h ̀h &  ￿￿ሀ￿￿&  ￿￿ሀ￿￿&  ￿￿က &  ￿￿ᄀҠ &  ￿￿ᄀ# &  ￿￿ሀ  Ă$  ￿￿￿￿Y     Ă8  ￿￿￿￿Z    &  i ̀i ă  ￿￿￿￿Z Ă8  ￿￿￿￿\    &  ] ̀] ă  ￿￿￿￿\ ă  ￿￿￿￿Y Ă$  ￿￿￿￿Y     Ă8  ￿￿￿￿Z    &  j ̀j ă  ￿￿￿￿Z Ă8  ￿￿￿￿\    &  ] ̀] ă  ￿￿￿￿\ ă  ￿￿￿￿Y ĂL  ￿￿￿￿`    &  a ̀a &  ￿￿ĀX缄ă   ￿￿￿￿` ă ¡ ￿￿￿￿W Ăt ¢ ￿￿￿￿W    &  ￿￿Ā#缏&  k ̀k &  ￿￿က &  ￿￿ᄀҠ Ă$ § ￿￿￿￿Y     Ă8 ¨ ￿￿￿￿\    &  ] ̀] ă ¨ ￿￿￿￿\ ă © ￿￿￿￿Y ă ª ￿￿￿￿W Ă « ￿￿￿￿W    &  ￿￿Ā#缏&  ￿￿Āǀ缎&  l ̀l &  ￿￿က &  ￿￿ᄀҠ Ă$ ± ￿￿￿￿Y     Ă8 ² ￿￿￿￿Z    &  m ̀m ă ² ￿￿￿￿Z Ă8 ´ ￿￿￿￿\    &  ] ̀] ă ´ ￿￿￿￿\ ă µ ￿￿￿￿Y ĂL · ￿￿￿￿`    &  n ̀n &  ￿￿Āǀ缎ă ¹ ￿￿￿￿` ĂL º ￿￿￿￿`    &  o ̀o &  ￿￿Ā͋缂ă ¼ ￿￿￿￿` ă ½ ￿￿￿￿W Ă8 ¿ ￿￿￿￿p    &  q ̀q Ă$ À ￿￿￿￿Y     Ă8 Á ￿￿￿￿Z    &  r ̀r ă Á ￿￿￿￿Z ă Â ￿￿￿￿Y ă Ã ￿￿￿￿p Ăt Æ ￿￿￿￿W    &  ￿￿Ā缎&  s ̀s &  ￿￿က &  ￿￿ሀ  ă Ì ￿￿￿￿W Ă` Í ￿￿￿￿W    &  ￿￿Ā缎&  t ̀t &  ￿￿ሀ  ă Ñ ￿￿￿￿W ĂL Ò ￿￿￿￿W    &  u ̀u &  ￿￿ሀ  ă Ó ￿￿￿￿W Ă Ö ￿￿￿￿W    &  ￿￿ĀĬă&  ￿￿Ā˜缎& 
+ ￿￿Āĕ缂&  v ̀v &  ￿￿ᄀҠ Ă$ Û ￿￿￿￿Y     Ă8 Ü ￿￿￿￿Z    &  w ̀w ă Ü ￿￿￿￿Z Ă8 Ý ￿￿￿￿Z    &  x ̀x ă Ý ￿￿￿￿Z Ă8 Þ ￿￿￿￿\    &  ] ̀] ă Þ ￿￿￿￿\ Ă8 ß ￿￿￿￿\    &  y ̀y ă ß ￿￿￿￿\ Ă8 à ￿￿￿￿z    &  { ̀{ ă à ￿￿￿￿z Ă8 á ￿￿￿￿z    &  | ̀| ă á ￿￿￿￿z Ă8 â ￿￿￿￿z    &  } ̀} ă â ￿￿￿￿z Ă8 ã ￿￿￿￿z    &  ~ ̀~ ă ã ￿￿￿￿z Ă8 ä ￿￿￿￿z    &   ̀ ă ä ￿￿￿￿z Ă8 å ￿￿￿￿z    &   ̀ ă å ￿￿￿￿z Ă8 æ ￿￿￿￿z    &   ̀ ă æ ￿￿￿￿z Ă8 ç ￿￿￿￿z    &   ̀ ă ç ￿￿￿￿z ă è ￿￿￿￿Y Ă$ é ￿￿￿￿Y     Ă8 ê ￿￿￿￿Z    &  w ̀w ă ê ￿￿￿￿Z Ă8 ë ￿￿￿￿Z    &  x ̀x ă ë ￿￿￿￿Z Ă8 ì ￿￿￿￿\    &  ] ̀] ă ì ￿￿￿￿\ Ă8 í ￿￿￿￿\    &  y ̀y ă í ￿￿￿￿\ Ă8 î ￿￿￿￿z    &  } ̀} ă î ￿￿￿￿z Ă8 ï ￿￿￿￿z    &  ~ ̀~ ă ï ￿￿￿￿z Ă8 ð ￿￿￿￿z    &  | ̀| ă ð ￿￿￿￿z Ă8 ñ ￿￿￿￿z    &  { ̀{ ă ñ ￿￿￿￿z Ă8 ò ￿￿￿￿z    &   ̀ ă ò ￿￿￿￿z Ă8 ó ￿￿￿￿z    &   ̀ ă ó ￿￿￿￿z Ă8 ô ￿￿￿￿z    &   ̀ ă ô ￿￿￿￿z Ă8 õ ￿￿￿￿z    &   ̀ ă õ ￿￿￿￿z Ă8 ö ￿￿￿￿z    &   ̀ ă ö ￿￿￿￿z Ă8 ÷ ￿￿￿￿z    &   ̀ ă ÷ ￿￿￿￿z Ă8 ø ￿￿￿￿z    &   ̀ ă ø ￿￿￿￿z Ă8 ù ￿￿￿￿z    &   ̀ ă ù ￿￿￿￿z Ă8 ú ￿￿￿￿z    &   ̀ ă ú ￿￿￿￿z ă û ￿￿￿￿Y Ă$ ü ￿￿￿￿Y     Ă8 ý ￿￿￿￿Z    &  w ̀w ă ý ￿￿￿￿Z Ă8 þ ￿￿￿￿\    &  ] ̀] ă þ ￿￿￿￿\ Ă8 ÿ ￿￿￿￿\    &  y ̀y ă ÿ ￿￿￿￿\ Ă8 Ā ￿￿￿￿z    &  } ̀} ă Ā ￿￿￿￿z Ă8 ā ￿￿￿￿z    &  ~ ̀~ ă ā ￿￿￿￿z Ă8 Ă ￿￿￿￿z    &   ̀ ă Ă ￿￿￿￿z Ă8 ă ￿￿￿￿z    &   ̀ ă ă ￿￿￿￿z Ă8 Ą ￿￿￿￿z    &   ̀ ă Ą ￿￿￿￿z Ă8 ą ￿￿￿￿z    &   ̀ ă ą ￿￿￿￿z ă Ć ￿￿￿￿Y ă ć ￿￿￿￿W Ă ĉ ￿￿￿￿W    &  ￿￿Ā0缏&  ￿￿Āȭ缎& 
+ ￿￿Ā 缃&   ̀ &  ￿￿ᄀҠ &  ￿￿ᄀ Ă$ ď ￿￿￿￿Y     Ă8 Đ ￿￿￿￿Z    &  ^ ̀^ ă Đ ￿￿￿￿Z Ă8 đ ￿￿￿￿\    &  ] ̀] ă đ ￿￿￿￿\ Ă8 Ē ￿￿￿￿\    &  _ ̀_ ă Ē ￿￿￿￿\ Ă8 ē ￿￿￿￿\    &   ̀ ă ē ￿￿￿￿\ ă Ĕ ￿￿￿￿Y Ă$ ĕ ￿￿￿￿Y     Ă8 Ė ￿￿￿￿Z    &   ̀ ă Ė ￿￿￿￿Z Ă8 ė ￿￿￿￿\    &   ̀ ă ė ￿￿￿￿\ Ă8 Ę ￿￿￿￿z    &   ̀ ă Ę ￿￿￿￿z ă ę ￿￿￿￿Y Ă$ Ě ￿￿￿￿Y     Ă8 ě ￿￿￿￿Z    &   ̀ ă ě ￿￿￿￿Z Ă8 Ĝ ￿￿￿￿\    &   ̀ ă Ĝ ￿￿￿￿\ Ă8 ĝ ￿￿￿￿\    &  ] ̀] ă ĝ ￿￿￿￿\ Ă8 Ğ ￿￿￿￿z    &   ̀ ă Ğ ￿￿￿￿z Ă8 ğ ￿￿￿￿z    &   ̀ ă ğ ￿￿￿￿z ă Ġ ￿￿￿￿Y Ă$ ģ ￿￿￿￿Y     Ă8 Ĥ ￿￿￿￿Z    &   ̀ ă Ĥ ￿￿￿￿Z Ă8 ĥ ￿￿￿￿\    &  ] ̀] ă ĥ ￿￿￿￿\ Ă8 Ħ ￿￿￿￿z    &   ̀ ă Ħ ￿￿￿￿z Ă8 ħ ￿￿￿￿z    &   ̀ ă ħ ￿￿￿￿z ă Ĩ ￿￿￿￿Y Ă$ ĩ ￿￿￿￿Y     Ă8 Ī ￿￿￿￿Z    &   ̀ ă Ī ￿￿￿￿Z Ă8 ī ￿￿￿￿\    &  ] ̀] ă ī ￿￿￿￿\ Ă8 Ĭ ￿￿￿￿z    &   ̀ ă Ĭ ￿￿￿￿z Ă8 ĭ ￿￿￿￿z    &   ̀ ă ĭ ￿￿￿￿z ă Į ￿￿￿￿Y Ă$ į ￿￿￿￿Y     Ă8 İ ￿￿￿￿Z    &  w ̀w ă İ ￿￿￿￿Z Ă8 ı ￿￿￿￿\    &  ] ̀] ă ı ￿￿￿￿\ Ă8 Ĳ ￿￿￿￿z    &   ̀ ă Ĳ ￿￿￿￿z Ă8 ĳ ￿￿￿￿z    &   ̀ ă ĳ ￿￿￿￿z ă Ĵ ￿￿￿￿Y Ă$ ĵ ￿￿￿￿Y     Ă8 Ķ ￿￿￿￿Z    &  w ̀w ă Ķ ￿￿￿￿Z Ă8 ķ ￿￿￿￿Z    &   ̀ ă ķ ￿￿￿￿Z Ă8 ĸ ￿￿￿￿\    &  ] ̀] ă ĸ ￿￿￿￿\ Ă8 Ĺ ￿￿￿￿\    &  y ̀y ă Ĺ ￿￿￿￿\ Ă8 ĺ ￿￿￿￿z    &  ' ̀' ă ĺ ￿￿￿￿z Ă8 Ļ ￿￿￿￿z    &  } ̀} ă Ļ ￿￿￿￿z Ă8 ļ ￿￿￿￿z    &  ~ ̀~ ă ļ ￿￿￿￿z Ă8 Ľ ￿￿￿￿z    &  | ̀| ă Ľ ￿￿￿￿z Ă8 ľ ￿￿￿￿z    &  { ̀{ ă ľ ￿￿￿￿z Ă8 Ŀ ￿￿￿￿z    &   ̀ ă Ŀ ￿￿￿￿z Ă8 ŀ ￿￿￿￿z    &   ̀ ă ŀ ￿￿￿￿z Ă8 Ł ￿￿￿￿z    &   ̀ ă Ł ￿￿￿￿z Ă8 ł ￿￿￿￿z    &   ̀ ă ł ￿￿￿￿z Ă8 Ń ￿￿￿￿z    &   ̀ ă Ń ￿￿￿￿z Ă8 ń ￿￿￿￿z    &   ̀ ă ń ￿￿￿￿z Ă8 Ņ ￿￿￿￿z    &    ̀  ă Ņ ￿￿￿￿z Ă8 ņ ￿￿￿￿z    &  ¡ ̀¡ ă ņ ￿￿￿￿z Ă8 ň ￿￿￿￿z    &  ¢ ̀¢ ă ň ￿￿￿￿z Ă8 ŉ ￿￿￿￿z    &  £ ̀£ ă ŉ ￿￿￿￿z Ă8 Ŋ ￿￿￿￿z    &  ¤ ̀¤ ă Ŋ ￿￿￿￿z Ă8 ŋ ￿￿￿￿z    &  ¥ ̀¥ ă ŋ ￿￿￿￿z Ă8 Ō ￿￿￿￿z    &  ¦ ̀¦ ă Ō ￿￿￿￿z Ă8 ō ￿￿￿￿z    &  § ̀§ ă ō ￿￿￿￿z Ă8 Ŏ ￿￿￿￿z    &  ¨ ̀¨ ă Ŏ ￿￿￿￿z Ă8 ŏ ￿￿￿￿z    &  © ̀© ă ŏ ￿￿￿￿z Ă8 Ő ￿￿￿￿z    &  ª ̀ª ă Ő ￿￿￿￿z Ă8 ő ￿￿￿￿z    &  « ̀« ă ő ￿￿￿￿z ă œ ￿￿￿￿Y Ă$ Ŕ ￿￿￿￿Y     Ă8 ŕ ￿￿￿￿Z    &   ̀ ă ŕ ￿￿￿￿Z Ă8 Ŗ ￿￿￿￿\    &  ] ̀] ă Ŗ ￿￿￿￿\ Ă8 ŗ ￿￿￿￿\    &  y ̀y ă ŗ ￿￿￿￿\ Ă8 Ř ￿￿￿￿z    &  } ̀} ă Ř ￿￿￿￿z Ă8 ř ￿￿￿￿z    &  ~ ̀~ ă ř ￿￿￿￿z Ă8 Ś ￿￿￿￿z    &  | ̀| ă Ś ￿￿￿￿z Ă8 ś ￿￿￿￿z    &  { ̀{ ă ś ￿￿￿￿z Ă8 Ŝ ￿￿￿￿z    &   ̀ ă Ŝ ￿￿￿￿z Ă8 ŝ ￿￿￿￿z    &   ̀ ă ŝ ￿￿￿￿z Ă8 Ş ￿￿￿￿z    &   ̀ ă Ş ￿￿￿￿z Ă8 ş ￿￿￿￿z    &   ̀ ă ş ￿￿￿￿z Ă8 Š ￿￿￿￿z    &   ̀ ă Š ￿￿￿￿z Ă8 š ￿￿￿￿z    &   ̀ ă š ￿￿￿￿z ă Ţ ￿￿￿￿Y Ă$ Ť ￿￿￿￿Y     Ă8 ť ￿￿￿￿Z    &  ¬ ̀¬ ă ť ￿￿￿￿Z Ă8 Ŧ ￿￿￿￿\    &   ̀ ă Ŧ ￿￿￿￿\ Ă8 ŧ ￿￿￿￿\    &  ] ̀] ă ŧ ￿￿￿￿\ Ă8 Ũ ￿￿￿￿z    &   ̀ ă Ũ ￿￿￿￿z Ă8 ũ ￿￿￿￿z    &   ̀ ă ũ ￿￿￿￿z ă Ū ￿￿￿￿Y ă Ŭ ￿￿￿￿W ĂL Ű ￿￿￿￿W    &  ￿￿ĀUă&  ­ ̀­ Ă$ Ų ￿￿￿￿Y     Ă8 ų ￿￿￿￿Z    &  ^ ̀^ ă ų ￿￿￿￿Z Ă8 Ŵ ￿￿￿￿\    &  ] ̀] ă Ŵ ￿￿￿￿\ ă ŵ ￿￿￿￿Y ă Ŷ ￿￿￿￿W Ă ź ￿￿￿￿b    &  ￿￿Āȭ缎& 
+ ￿￿Ā 缃&  ® ̀® &  ￿￿ᄀҠ &   ̀ Ă$ ſ ￿￿￿￿Y     Ă8 ƀ ￿￿￿￿Z    &  ^ ̀^ ă ƀ ￿￿￿￿Z ă Ɓ ￿￿￿￿Y ă Ƃ ￿￿￿￿b Ăt ƒ ￿￿￿￿W    &  ￿￿Āă& 
+ ￿￿Ā͔缂&  ¯ ̀¯ &  ￿￿ᄀҠ Ă8 Ɩ ￿￿￿￿Y    &  ￿￿Ā˷缎Ă8 Ɨ ￿￿￿￿Z    &  ° ̀° ă Ɨ ￿￿￿￿Z Ă8 Ƙ ￿￿￿￿z    &   ̀ ă Ƙ ￿￿￿￿z Ă8 ƙ ￿￿￿￿\    &  ] ̀] ă ƙ ￿￿￿￿\ ă ƚ ￿￿￿￿Y Ă8 ƛ ￿￿￿￿Y    &  ￿￿Ā缎Ă8 Ɯ ￿￿￿￿Z    &  ± ̀± ă Ɯ ￿￿￿￿Z Ă8 Ɲ ￿￿￿￿\    &  ] ̀] ă Ɲ ￿￿￿￿\ ă ƞ ￿￿￿￿Y ĂL Ɵ ￿￿￿￿`    &  ² ̀² &  ￿￿Ā缆ă Ơ ￿￿￿￿` ă ơ ￿￿￿￿W Ă Ƣ ￿￿￿￿³    &  ´ ̀´ &   µ ̀µ & ! ¶ ̀¶ &  ´ ̀´ &  ￿￿ሀ￿￿ă Ƨ ￿￿￿￿³ ĂL Ʃ ￿￿￿￿·    &  ¸ ̀¸ & " ￿￿ሀ  ă ƫ ￿￿￿￿· Ă ƭ ￿￿￿￿W    &  ￿￿Ā6缏&  ￿￿Ā 缎&  ¹ ̀¹ &  ￿￿က &  ￿￿ᄀҠ &  ￿￿ሀ  Ă$ ƴ ￿￿￿￿Y     Ă8 Ƶ ￿￿￿￿Z    &  º ̀º ă Ƶ ￿￿￿￿Z Ă8 ƶ ￿￿￿￿\    &  ] ̀] ă ƶ ￿￿￿￿\ Ă8 Ʒ ￿￿￿￿z    &   ̀ ă Ʒ ￿￿￿￿z ă Ƹ ￿￿￿￿Y Ă$ ƹ ￿￿￿￿Y     Ă8 ƺ ￿￿￿￿Z    &  » ̀» ă ƺ ￿￿￿￿Z Ă8 ƻ ￿￿￿￿\    &  ] ̀] ă ƻ ￿￿￿￿\ Ă8 Ƽ ￿￿￿￿z    &   ̀ ă Ƽ ￿￿￿￿z ă ƽ ￿￿￿￿Y Ă$ ƾ ￿￿￿￿Y     Ă8 ƿ ￿￿￿￿Z    &  ¼ ̀¼ ă ƿ ￿￿￿￿Z Ă8 ǀ ￿￿￿￿\    &  ] ̀] ă ǀ ￿￿￿￿\ Ă8 ǁ ￿￿￿￿z    &   ̀ ă ǁ ￿￿￿￿z ă ǂ ￿￿￿￿Y ă ǃ ￿￿￿￿W Ă Ǆ ￿￿￿￿W    &  ￿￿Ā6缏&  ½ ̀½ &  ￿￿က &  ￿￿ᄀҠ & 	 ￿￿ሀ  &  ￿￿ሀ  ă ǋ ￿￿￿￿W Ă` ǌ ￿￿￿￿W    &  ￿￿Ā=缏&  ¾ ̀¾ & 	 ￿￿ሀ  ă ǐ ￿￿￿￿W Ă Ǒ ￿￿￿￿W    &  ￿￿Ā7缏&  ￿￿Ā?缎&  ¿ ̀¿ &  ￿￿ᄀҠ &  ￿￿ሀ  ă Ǡ ￿￿￿￿W ĂL ǡ ￿￿￿￿À    &  Á ̀Á & # ￿￿ሀ  ă Ǣ ￿￿￿￿À Ă` ǩ ￿￿￿￿W    &  ￿￿Ā9缏&  Â ̀Â &  ￿￿ᄀҠ ă ǫ ￿￿￿￿W Ă` Ǭ ￿￿￿￿W    &  ￿￿Ā9缏&  Ã ̀Ã &  ￿￿ᄀҠ ă Ǯ ￿￿￿￿W Ă` ǳ ￿￿￿￿W    &  ￿￿Ā6缏&  Ä ̀Ä &  ￿￿ሀ  ă ǵ ￿￿￿￿W Ă` Ƕ ￿￿￿￿W    &  ￿￿Ā6缏&  Å ̀Å &  ￿￿ሀ  ă Ǹ ￿￿￿￿W Ă` ǹ ￿￿￿￿W    &  ￿￿Ā6缏&  Æ ̀Æ &  ￿￿ሀ  ă ǻ ￿￿￿￿W Ă Ǽ ￿￿￿￿W    &  ￿￿Ā6缏&  Ç ̀Ç &  ￿￿ᄀҠ &  ￿￿ᄀ &  ￿￿ሀ  ă Ȁ ￿￿￿￿W ĂL Ȃ ￿￿￿￿·    &  È ̀È & " ￿￿ሀ  ă Ȃ ￿￿￿￿· Ă Ȅ ￿￿￿￿³    &  É ̀É &   2 ̀2 & ! 1 ̀1 & " ￿￿ሀ￿￿&  Ê ̀Ê ă ȉ ￿￿￿￿³ Ă` ȏ ￿￿￿￿·    &  Ë ̀Ë & $ 3 ̀3 & " ￿￿ሀ  Ă$ Ȓ ￿￿￿￿Y     Ă8 ȓ ￿￿￿￿Z    &  Ì ̀Ì ă ȓ ￿￿￿￿Z ă Ȕ ￿￿￿￿Y Ă$ ȕ ￿￿￿￿Y     Ă8 Ȗ ￿￿￿￿Z    &  Í ̀Í ă Ȗ ￿￿￿￿Z ă ȗ ￿￿￿￿Y Ă$ Ș ￿￿￿￿Y     Ă8 ș ￿￿￿￿Z    &  Î ̀Î ă ș ￿￿￿￿Z ă Ț ￿￿￿￿Y ă ț ￿￿￿￿· Ă8 ȝ ￿￿￿￿p    &  Ï ̀Ï Ă$ Ȟ ￿￿￿￿Y     Ă8 ȟ ￿￿￿￿Z    &  Ð ̀Ð ă ȟ ￿￿￿￿Z Ă8 Ƞ ￿￿￿￿z    &   ̀ ă Ƞ ￿￿￿￿z ă ȡ ￿￿￿￿Y ă Ȣ ￿￿￿￿p ă Ȥ ￿￿￿￿U ă Ȧ ￿￿￿￿+ ā Ȧ ￿￿% & 
