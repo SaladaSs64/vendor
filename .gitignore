@@ -1,429 +1,2044 @@
-.class public final Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat;
+.class public final Lcom/zui/cameragallery/R$string;
 .super Ljava/lang/Object;
-.source "AccessibilityServiceInfoCompat.java"
+.source "R.java"
 
 
 # annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoIcsImpl;,
-        Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoJellyBeanMr2;,
-        Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoStubImpl;,
-        Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoVersionImpl;
-    }
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/zui/cameragallery/R;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "string"
 .end annotation
 
 
 # static fields
-.field public static final CAPABILITY_CAN_FILTER_KEY_EVENTS:I = 0x8
+.field public static final CANCEL:I = 0x7f0e0272
 
-.field public static final CAPABILITY_CAN_REQUEST_ENHANCED_WEB_ACCESSIBILITY:I = 0x4
+.field public static final ERROR_MSG_CERTIFICATE_EVALUATION_PERIOD:I = 0x7f0e0263
 
-.field public static final CAPABILITY_CAN_REQUEST_TOUCH_EXPLORATION:I = 0x2
+.field public static final ERROR_MSG_CERTIFICATE_INVALID_SIGNATURE:I = 0x7f0e0262
 
-.field public static final CAPABILITY_CAN_RETRIEVE_WINDOW_CONTENT:I = 0x1
+.field public static final Fixed:I = 0x7f0e0029
 
-.field public static final DEFAULT:I = 0x1
+.field public static final Import:I = 0x7f0e0321
 
-.field public static final FEEDBACK_ALL_MASK:I = -0x1
+.field public static final MSG_CANCEL_CAPTURE:I = 0x7f0e025c
 
-.field public static final FEEDBACK_BRAILLE:I = 0x20
+.field public static final MSG_MISALIGNMENT:I = 0x7f0e025e
 
-.field public static final FLAG_INCLUDE_NOT_IMPORTANT_VIEWS:I = 0x2
+.field public static final MSG_MOVE_CAMERA_SLOWLY:I = 0x7f0e025d
 
-.field public static final FLAG_REPORT_VIEW_IDS:I = 0x10
+.field public static final MSG_SAVE_OUTPUT_IMAGE:I = 0x7f0e025b
 
-.field public static final FLAG_REQUEST_ENHANCED_WEB_ACCESSIBILITY:I = 0x8
+.field public static final MSG_SENSOR_CORRECTION_BEFOREHAND:I = 0x7f0e0261
 
-.field public static final FLAG_REQUEST_FILTER_KEY_EVENTS:I = 0x20
+.field public static final MSG_SENSOR_CORRECTION_EVERY_TIME:I = 0x7f0e0260
 
-.field public static final FLAG_REQUEST_TOUCH_EXPLORATION_MODE:I = 0x4
+.field public static final MSG_TOOFAST:I = 0x7f0e025f
 
-.field private static final IMPL:Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoVersionImpl;
+.field public static final OK:I = 0x7f0e0273
+
+.field public static final START:I = 0x7f0e0271
+
+.field public static final access_sd_fail:I = 0x7f0e00c8
+
+.field public static final accessibility_back_to_first_level:I = 0x7f0e0364
+
+.field public static final accessibility_camera_picker:I = 0x7f0e0361
+
+.field public static final accessibility_cancel_button:I = 0x7f0e015b
+
+.field public static final accessibility_check_box:I = 0x7f0e015d
+
+.field public static final accessibility_decrement:I = 0x7f0e0366
+
+.field public static final accessibility_filmstrip_toggle:I = 0x7f0e0177
+
+.field public static final accessibility_increment:I = 0x7f0e0367
+
+.field public static final accessibility_menu_button:I = 0x7f0e015c
+
+.field public static final accessibility_mode_list_hidden:I = 0x7f0e0168
+
+.field public static final accessibility_mode_list_shown:I = 0x7f0e0169
+
+.field public static final accessibility_mode_list_toggle:I = 0x7f0e0175
+
+.field public static final accessibility_mode_options:I = 0x7f0e0167
+
+.field public static final accessibility_mode_picker:I = 0x7f0e0362
+
+.field public static final accessibility_pause_video:I = 0x7f0e0369
+
+.field public static final accessibility_play_video:I = 0x7f0e0368
+
+.field public static final accessibility_reload_video:I = 0x7f0e036a
+
+.field public static final accessibility_review_cancel:I = 0x7f0e0164
+
+.field public static final accessibility_review_ok:I = 0x7f0e0165
+
+.field public static final accessibility_review_retake:I = 0x7f0e0166
+
+.field public static final accessibility_review_thumbnail:I = 0x7f0e0360
+
+.field public static final accessibility_second_level_indicators:I = 0x7f0e0363
+
+.field public static final accessibility_shutter_button:I = 0x7f0e015a
+
+.field public static final accessibility_switch_to_camera:I = 0x7f0e015e
+
+.field public static final accessibility_switch_to_gcam:I = 0x7f0e0162
+
+.field public static final accessibility_switch_to_panorama:I = 0x7f0e0160
+
+.field public static final accessibility_switch_to_photo_sphere:I = 0x7f0e0161
+
+.field public static final accessibility_switch_to_refocus:I = 0x7f0e0163
+
+.field public static final accessibility_switch_to_video:I = 0x7f0e015f
+
+.field public static final accessibility_time_bar:I = 0x7f0e036b
+
+.field public static final accessibility_unlock_to_camera:I = 0x7f0e016d
+
+.field public static final accessibility_zoom_control:I = 0x7f0e0365
+
+.field public static final actionbar_back_camera:I = 0x7f0e02b0
+
+.field public static final add:I = 0x7f0e03b6
+
+.field public static final add_account:I = 0x7f0e0333
+
+.field public static final add_favorites:I = 0x7f0e03c6
+
+.field public static final add_image_to_group_album:I = 0x7f0e03a5
+
+.field public static final add_image_video_to_group_album:I = 0x7f0e03a7
+
+.field public static final add_to_favo_succ:I = 0x7f0e03e8
+
+.field public static final add_to_group_album:I = 0x7f0e0378
+
+.field public static final add_video_to_group_album:I = 0x7f0e03a6
+
+.field public static final ae_af_locked_tip:I = 0x7f0e0239
+
+.field public static final album_add_title:I = 0x7f0e0380
+
+.field public static final album_add_to_folder:I = 0x7f0e0377
+
+.field public static final album_is_adding_to_group:I = 0x7f0e0379
+
+.field public static final album_is_removing_from_group:I = 0x7f0e037c
+
+.field public static final album_more_title:I = 0x7f0e037f
+
+.field public static final album_move_to_more:I = 0x7f0e037a
+
+.field public static final album_new_folder:I = 0x7f0e037d
+
+.field public static final album_new_folder_nextstep:I = 0x7f0e0383
+
+.field public static final album_please_select_group:I = 0x7f0e037e
+
+.field public static final album_remove:I = 0x7f0e03ae
+
+.field public static final album_remove_from_more:I = 0x7f0e037b
+
+.field public static final album_set_add_group_hint:I = 0x7f0e0372
+
+.field public static final albums:I = 0x7f0e032c
+
+.field public static final albumset_rename:I = 0x7f0e03d0
+
+.field public static final albumset_rename_hint:I = 0x7f0e03d1
+
+.field public static final all_photo_to_gallery:I = 0x7f0e02b1
+
+.field public static final aperture:I = 0x7f0e00b5
+
+.field public static final app_name:I = 0x7f0e0092
+
+.field public static final apply_effect:I = 0x7f0e001d
+
+.field public static final appwidget_empty_text:I = 0x7f0e0306
+
+.field public static final appwidget_title:I = 0x7f0e0305
+
+.field public static final aspect:I = 0x7f0e001f
+
+.field public static final aspect16to9_effect:I = 0x7f0e0023
+
+.field public static final aspect1to1_effect:I = 0x7f0e0020
+
+.field public static final aspect3to4_effect:I = 0x7f0e0022
+
+.field public static final aspect4to3_effect:I = 0x7f0e0021
+
+.field public static final aspect5to7_effect:I = 0x7f0e0024
+
+.field public static final aspect7to5_effect:I = 0x7f0e0025
+
+.field public static final aspect9to16_effect:I = 0x7f0e0026
+
+.field public static final aspectNone_effect:I = 0x7f0e0027
+
+.field public static final aspectOriginal_effect:I = 0x7f0e0028
+
+.field public static final auto:I = 0x7f0e00bc
+
+.field public static final back:I = 0x7f0e03c1
+
+.field public static final beauty_face_0:I = 0x7f0e02c1
+
+.field public static final beauty_face_god_desc:I = 0x7f0e024e
+
+.field public static final beauty_face_goddress_desc:I = 0x7f0e024f
+
+.field public static final beauty_face_off_desc:I = 0x7f0e024c
+
+.field public static final beauty_face_ordinary_desc:I = 0x7f0e024d
+
+.field public static final bg_replacement_message:I = 0x7f0e035e
+
+.field public static final borders:I = 0x7f0e0005
+
+.field public static final btn_filmstrip_toggle:I = 0x7f0e0178
+
+.field public static final btn_mode_list_toggle:I = 0x7f0e0176
+
+.field public static final button_change_announcement:I = 0x7f0e01ed
+
+.field public static final bwfilter:I = 0x7f0e0030
+
+.field public static final caching_label:I = 0x7f0e02f5
+
+.field public static final camera_connected:I = 0x7f0e0324
+
+.field public static final camera_disabled:I = 0x7f0e00c4
+
+.field public static final camera_disconnected:I = 0x7f0e0325
+
+.field public static final camera_error_title:I = 0x7f0e00c2
+
+.field public static final camera_id_back_desc:I = 0x7f0e01d7
+
+.field public static final camera_id_front_desc:I = 0x7f0e01d8
+
+.field public static final camera_label:I = 0x7f0e034e
+
+.field public static final camera_menu_more_label:I = 0x7f0e01b0
+
+.field public static final camera_menu_settings_label:I = 0x7f0e01b1
+
+.field public static final camera_mode_flash:I = 0x7f0e0240
+
+.field public static final camera_mode_hdr:I = 0x7f0e023e
+
+.field public static final camera_mode_hfr_recording:I = 0x7f0e023d
+
+.field public static final camera_mode_lfr_recording:I = 0x7f0e023c
+
+.field public static final camera_mode_panorama:I = 0x7f0e023a
+
+.field public static final camera_mode_qrcord:I = 0x7f0e023b
+
+.field public static final camera_mode_ratio:I = 0x7f0e023f
+
+.field public static final camera_setas_wallpaper:I = 0x7f0e02ea
+
+.field public static final cancel:I = 0x7f0e02ec
+
+.field public static final cancel_button_description:I = 0x7f0e01e0
+
+.field public static final canel_selectall:I = 0x7f0e03ac
+
+.field public static final cannot_connect_camera:I = 0x7f0e00c3
+
+.field public static final cannot_edit_original:I = 0x7f0e0001
+
+.field public static final cannot_load_image:I = 0x7f0e01b8
+
+.field public static final capital_off:I = 0x7f0e017a
+
+.field public static final capital_on:I = 0x7f0e0179
+
+.field public static final capture_loading_dialog_text:I = 0x7f0e03ef
+
+.field public static final capturing:I = 0x7f0e00ca
+
+.field public static final circle_menu_item_image:I = 0x7f0e03d6
+
+.field public static final circle_menu_off_desc:I = 0x7f0e0251
+
+.field public static final circle_menu_on_desc:I = 0x7f0e0250
+
+.field public static final clear_effects:I = 0x7f0e0157
+
+.field public static final click_import:I = 0x7f0e0326
+
+.field public static final cling_text_for_refocus_editor_button:I = 0x7f0e021a
+
+.field public static final close:I = 0x7f0e009e
+
+.field public static final cloud_title:I = 0x7f0e0371
+
+.field public static final color_border_clear:I = 0x7f0e0065
+
+.field public static final color_border_color:I = 0x7f0e0064
+
+.field public static final color_border_corner_size:I = 0x7f0e0063
+
+.field public static final color_border_size:I = 0x7f0e0062
+
+.field public static final color_pick_select:I = 0x7f0e0066
+
+.field public static final color_pick_title:I = 0x7f0e0067
+
+.field public static final compare_original:I = 0x7f0e001c
+
+.field public static final complete:I = 0x7f0e03d8
+
+.field public static final confirm:I = 0x7f0e02eb
+
+.field public static final confirm_button_text:I = 0x7f0e0223
+
+.field public static final continous_count_default:I = 0x7f0e02b7
+
+.field public static final continuous_shot_count:I = 0x7f0e02b2
+
+.field public static final continuous_shot_counts:I = 0x7f0e02b3
+
+.field public static final contrast:I = 0x7f0e002d
+
+.field public static final count_down_title_text:I = 0x7f0e01ab
+
+.field public static final countdown_timer_duration_10s:I = 0x7f0e01de
+
+.field public static final countdown_timer_duration_3s:I = 0x7f0e01dc
+
+.field public static final countdown_timer_duration_5s:I = 0x7f0e01dd
+
+.field public static final countdown_timer_off:I = 0x7f0e01db
+
+.field public static final create_tiny_planet:I = 0x7f0e01b2
+
+.field public static final crop:I = 0x7f0e003f
+
+.field public static final crop_action:I = 0x7f0e00a3
+
+.field public static final crop_label:I = 0x7f0e02e1
+
+.field public static final crop_save:I = 0x7f0e01b7
+
+.field public static final crop_save_text:I = 0x7f0e02db
+
+.field public static final crop_saved:I = 0x7f0e0307
+
+.field public static final crop_video:I = 0x7f0e03d2
+
+.field public static final cropped_sensor_16x9_aspect_ratio:I = 0x7f0e0225
+
+.field public static final curvesRGB:I = 0x7f0e0035
+
+.field public static final curves_channel_blue:I = 0x7f0e0057
+
+.field public static final curves_channel_green:I = 0x7f0e0056
+
+.field public static final curves_channel_red:I = 0x7f0e0055
+
+.field public static final curves_channel_rgb:I = 0x7f0e0054
+
+.field public static final custom_album:I = 0x7f0e03ce
+
+.field public static final custom_border:I = 0x7f0e0006
+
+.field public static final day:I = 0x7f0e03be
+
+.field public static final del:I = 0x7f0e03cc
+
+.field public static final delete:I = 0x7f0e0097
+
+.field public static final delete_button_description:I = 0x7f0e01e6
+
+.field public static final delete_image_video:I = 0x7f0e0394
+
+.field public static final delete_image_video_with_other_album:I = 0x7f0e0395
+
+.field public static final delete_more_continue_folder:I = 0x7f0e0392
+
+.field public static final delete_more_continue_folder_image:I = 0x7f0e0399
+
+.field public static final delete_more_continue_folder_image_video:I = 0x7f0e039c
+
+.field public static final delete_more_continue_folder_video:I = 0x7f0e039a
+
+.field public static final delete_more_continue_folder_with_other_album:I = 0x7f0e0393
+
+.field public static final delete_more_folder:I = 0x7f0e039d
+
+.field public static final delete_more_folder_with_other_album:I = 0x7f0e039e
+
+.field public static final delete_more_image:I = 0x7f0e038c
+
+.field public static final delete_more_image_with_other_album:I = 0x7f0e038d
+
+.field public static final delete_more_video:I = 0x7f0e038f
+
+.field public static final delete_more_video_with_other_album:I = 0x7f0e0390
+
+.field public static final delete_one_continue_folder:I = 0x7f0e02c4
+
+.field public static final delete_one_continue_folder_image:I = 0x7f0e0397
+
+.field public static final delete_one_continue_folder_image_video:I = 0x7f0e039b
+
+.field public static final delete_one_continue_folder_video:I = 0x7f0e0398
+
+.field public static final delete_one_continue_folder_with_other_album:I = 0x7f0e0391
+
+.field public static final delete_one_folder:I = 0x7f0e039f
+
+.field public static final delete_one_folder_with_other_album:I = 0x7f0e03a0
+
+.field public static final delete_one_image:I = 0x7f0e02c2
+
+.field public static final delete_one_image_with_other_album:I = 0x7f0e038b
+
+.field public static final delete_one_video:I = 0x7f0e02c3
+
+.field public static final delete_one_video_with_other_album:I = 0x7f0e038e
+
+.field public static final delete_with_other_album:I = 0x7f0e0396
+
+.field public static final deleted:I = 0x7f0e009b
+
+.field public static final description:I = 0x7f0e00a8
+
+.field public static final deselect_all:I = 0x7f0e02ee
+
+.field public static final details:I = 0x7f0e009d
+
+.field public static final details_hms:I = 0x7f0e0095
+
+.field public static final details_ms:I = 0x7f0e0094
+
+.field public static final details_title:I = 0x7f0e02f0
+
+.field public static final dialog_cancel:I = 0x7f0e0139
+
+.field public static final dialog_ok:I = 0x7f0e0138
+
+.field public static final disable_video_snapshot_hint:I = 0x7f0e035f
+
+.field public static final done:I = 0x7f0e030d
+
+.field public static final done_button_description:I = 0x7f0e01e1
+
+.field public static final download_failure:I = 0x7f0e0003
+
+.field public static final downsample:I = 0x7f0e0046
+
+.field public static final draw_clear:I = 0x7f0e0061
+
+.field public static final draw_color:I = 0x7f0e005d
+
+.field public static final draw_hue:I = 0x7f0e005a
+
+.field public static final draw_saturation:I = 0x7f0e005b
+
+.field public static final draw_size:I = 0x7f0e0059
+
+.field public static final draw_size_accept:I = 0x7f0e0069
+
+.field public static final draw_size_title:I = 0x7f0e0068
+
+.field public static final draw_style:I = 0x7f0e0058
+
+.field public static final draw_style_brush_marker:I = 0x7f0e0060
+
+.field public static final draw_style_brush_spatter:I = 0x7f0e005f
+
+.field public static final draw_style_line:I = 0x7f0e005e
+
+.field public static final draw_value:I = 0x7f0e005c
+
+.field public static final duration:I = 0x7f0e00af
+
+.field public static final edge:I = 0x7f0e0044
+
+.field public static final edit:I = 0x7f0e00a2
+
+.field public static final edit_button_description:I = 0x7f0e01e5
+
+.field public static final edit_with:I = 0x7f0e0221
+
+.field public static final editor_chan_sat_blue:I = 0x7f0e0050
+
+.field public static final editor_chan_sat_cyan:I = 0x7f0e004f
+
+.field public static final editor_chan_sat_green:I = 0x7f0e004e
+
+.field public static final editor_chan_sat_magenta:I = 0x7f0e0051
+
+.field public static final editor_chan_sat_main:I = 0x7f0e004b
+
+.field public static final editor_chan_sat_red:I = 0x7f0e004c
+
+.field public static final editor_chan_sat_yellow:I = 0x7f0e004d
+
+.field public static final editor_grad_brightness:I = 0x7f0e0048
+
+.field public static final editor_grad_contrast:I = 0x7f0e0049
+
+.field public static final editor_grad_new:I = 0x7f0e0053
+
+.field public static final editor_grad_saturation:I = 0x7f0e004a
+
+.field public static final editor_grad_style:I = 0x7f0e0052
+
+.field public static final effect_backdropper_gallery:I = 0x7f0e0153
+
+.field public static final effect_backdropper_space:I = 0x7f0e0151
+
+.field public static final effect_backdropper_sunset:I = 0x7f0e0152
+
+.field public static final effect_background:I = 0x7f0e0159
+
+.field public static final effect_filter_swipe_hint_text:I = 0x7f0e02af
+
+.field public static final effect_goofy_face_big_eyes:I = 0x7f0e014c
+
+.field public static final effect_goofy_face_big_mouth:I = 0x7f0e014d
+
+.field public static final effect_goofy_face_big_nose:I = 0x7f0e014f
+
+.field public static final effect_goofy_face_small_eyes:I = 0x7f0e0150
+
+.field public static final effect_goofy_face_small_mouth:I = 0x7f0e014e
+
+.field public static final effect_goofy_face_squeeze:I = 0x7f0e014b
+
+.field public static final effect_none:I = 0x7f0e014a
+
+.field public static final effect_silly_faces:I = 0x7f0e0158
+
+.field public static final empty:I = 0x7f0e036c
+
+.field public static final empty_album:I = 0x7f0e0309
+
+.field public static final empty_photo:I = 0x7f0e03b4
+
+.field public static final empty_video:I = 0x7f0e03b5
+
+.field public static final exit:I = 0x7f0e0017
+
+.field public static final export_flattened:I = 0x7f0e000d
+
+.field public static final export_image:I = 0x7f0e000b
+
+.field public static final exposure:I = 0x7f0e002b
+
+.field public static final exposure_compensation_desc_0:I = 0x7f0e01ea
+
+.field public static final exposure_compensation_desc_n1:I = 0x7f0e01e9
+
+.field public static final exposure_compensation_desc_n2:I = 0x7f0e01e8
+
+.field public static final exposure_compensation_desc_p1:I = 0x7f0e01eb
+
+.field public static final exposure_compensation_desc_p2:I = 0x7f0e01ec
+
+.field public static final exposure_time:I = 0x7f0e00b8
+
+.field public static final face_cont_off_desc:I = 0x7f0e0258
+
+.field public static final face_cont_on_desc:I = 0x7f0e0259
+
+.field public static final fail_to_load:I = 0x7f0e02d7
+
+.field public static final fail_to_load_image:I = 0x7f0e02d8
+
+.field public static final ffx_bleach:I = 0x7f0e0312
+
+.field public static final ffx_blue_crush:I = 0x7f0e0313
+
+.field public static final ffx_bw_contrast:I = 0x7f0e0314
+
+.field public static final ffx_instant:I = 0x7f0e0311
+
+.field public static final ffx_original:I = 0x7f0e030f
+
+.field public static final ffx_punch:I = 0x7f0e0315
+
+.field public static final ffx_vintage:I = 0x7f0e0310
+
+.field public static final ffx_washout:I = 0x7f0e0317
+
+.field public static final ffx_washout_color:I = 0x7f0e0318
+
+.field public static final ffx_x_process:I = 0x7f0e0316
+
+.field public static final file_not_exist:I = 0x7f0e03d9
+
+.field public static final file_size:I = 0x7f0e00b1
+
+.field public static final filter_layout_view_grid_item_textview_exit_text:I = 0x7f0e0238
+
+.field public static final filter_layout_view_grid_item_textview_text:I = 0x7f0e0237
+
+.field public static final filter_layout_view_grid_item_textview_text_eight:I = 0x7f0e0236
+
+.field public static final filter_layout_view_grid_item_textview_text_five:I = 0x7f0e0233
+
+.field public static final filter_layout_view_grid_item_textview_text_four:I = 0x7f0e0232
+
+.field public static final filter_layout_view_grid_item_textview_text_general:I = 0x7f0e022e
+
+.field public static final filter_layout_view_grid_item_textview_text_one:I = 0x7f0e022f
+
+.field public static final filter_layout_view_grid_item_textview_text_seven:I = 0x7f0e0235
+
+.field public static final filter_layout_view_grid_item_textview_text_six:I = 0x7f0e0234
+
+.field public static final filter_layout_view_grid_item_textview_text_three:I = 0x7f0e0231
+
+.field public static final filter_layout_view_grid_item_textview_text_two:I = 0x7f0e0230
+
+.field public static final filter_names_0:I = 0x7f0e02b8
+
+.field public static final filter_names_1:I = 0x7f0e02b9
+
+.field public static final filter_names_2:I = 0x7f0e02ba
+
+.field public static final filter_names_3:I = 0x7f0e02bb
+
+.field public static final filter_names_4:I = 0x7f0e02bc
+
+.field public static final filter_names_5:I = 0x7f0e02bd
+
+.field public static final filter_names_6:I = 0x7f0e02be
+
+.field public static final filter_names_7:I = 0x7f0e02bf
+
+.field public static final filter_names_8:I = 0x7f0e02c0
+
+.field public static final filtershow_add_button_looks:I = 0x7f0e0077
+
+.field public static final filtershow_add_button_versions:I = 0x7f0e0078
+
+.field public static final filtershow_crop_freedom:I = 0x7f0e038a
+
+.field public static final filtershow_crop_original:I = 0x7f0e0389
+
+.field public static final filtershow_exif_aperture:I = 0x7f0e007c
+
+.field public static final filtershow_exif_copyright:I = 0x7f0e0083
+
+.field public static final filtershow_exif_date:I = 0x7f0e0080
+
+.field public static final filtershow_exif_exposure_time:I = 0x7f0e0082
+
+.field public static final filtershow_exif_f_stop:I = 0x7f0e0081
+
+.field public static final filtershow_exif_focal_length:I = 0x7f0e007d
+
+.field public static final filtershow_exif_iso:I = 0x7f0e007e
+
+.field public static final filtershow_exif_model:I = 0x7f0e007b
+
+.field public static final filtershow_exif_subject_distance:I = 0x7f0e007f
+
+.field public static final filtershow_manage_preset:I = 0x7f0e006f
+
+.field public static final filtershow_new_preset:I = 0x7f0e0070
+
+.field public static final filtershow_notification_label:I = 0x7f0e006c
+
+.field public static final filtershow_notification_message:I = 0x7f0e006d
+
+.field public static final filtershow_preset_name:I = 0x7f0e0071
+
+.field public static final filtershow_redo:I = 0x7f0e0008
+
+.field public static final filtershow_save_preset:I = 0x7f0e006e
+
+.field public static final filtershow_saving_image:I = 0x7f0e02df
+
+.field public static final filtershow_show_info_panel:I = 0x7f0e0072
+
+.field public static final filtershow_show_info_panel_exif:I = 0x7f0e0076
+
+.field public static final filtershow_show_info_panel_histogram:I = 0x7f0e0075
+
+.field public static final filtershow_show_info_panel_name:I = 0x7f0e0073
+
+.field public static final filtershow_show_info_panel_size:I = 0x7f0e0074
+
+.field public static final filtershow_undo:I = 0x7f0e0007
+
+.field public static final filtershow_version_current:I = 0x7f0e007a
+
+.field public static final filtershow_version_original:I = 0x7f0e0079
+
+.field public static final first_dialog_not_show:I = 0x7f0e02ca
+
+.field public static final first_dialog_quit:I = 0x7f0e02cb
+
+.field public static final first_dialog_text_1:I = 0x7f0e02c6
+
+.field public static final first_dialog_text_1_message:I = 0x7f0e02c7
+
+.field public static final first_dialog_text_2:I = 0x7f0e02c8
+
+.field public static final first_dialog_text_2_message:I = 0x7f0e02c9
+
+.field public static final first_dialog_title:I = 0x7f0e02c5
+
+.field public static final first_dialog_yes:I = 0x7f0e02cc
+
+.field public static final flash:I = 0x7f0e00b4
+
+.field public static final flash_auto_desc:I = 0x7f0e01d0
+
+.field public static final flash_off:I = 0x7f0e00be
+
+.field public static final flash_off_desc:I = 0x7f0e01cf
+
+.field public static final flash_on:I = 0x7f0e00bd
+
+.field public static final flash_on_desc:I = 0x7f0e01d1
+
+.field public static final focal_length:I = 0x7f0e00b6
+
+.field public static final focus_ring_toggle:I = 0x7f0e01f5
+
+.field public static final folder_camera:I = 0x7f0e0334
+
+.field public static final folder_download:I = 0x7f0e0335
+
+.field public static final folder_edited_online_photos:I = 0x7f0e0336
+
+.field public static final folder_favorite:I = 0x7f0e0376
+
+.field public static final folder_imported:I = 0x7f0e0337
+
+.field public static final folder_pano:I = 0x7f0e0374
+
+.field public static final folder_screenshot:I = 0x7f0e0338
+
+.field public static final folder_selfgraph:I = 0x7f0e0373
+
+.field public static final folder_video:I = 0x7f0e0375
+
+.field public static final free_space_format:I = 0x7f0e031d
+
+.field public static final full_sensor_4x3_aspect_ratio:I = 0x7f0e0224
+
+.field public static final gadget_title:I = 0x7f0e02ce
+
+.field public static final gallery_app_name:I = 0x7f0e0228
+
+.field public static final gallery_title_after_pm:I = 0x7f0e03ed
+
+.field public static final gallery_title_am:I = 0x7f0e03ea
+
+.field public static final gallery_title_before_am:I = 0x7f0e03ec
+
+.field public static final gallery_title_noon:I = 0x7f0e03ee
+
+.field public static final gallery_title_pm:I = 0x7f0e03eb
+
+.field public static final gif_error:I = 0x7f0e03af
+
+.field public static final grad:I = 0x7f0e0047
+
+.field public static final grid_lines_off_desc:I = 0x7f0e01d9
+
+.field public static final grid_lines_on_desc:I = 0x7f0e01da
+
+.field public static final group_by:I = 0x7f0e0331
+
+.field public static final group_by_album:I = 0x7f0e02fc
+
+.field public static final group_by_faces:I = 0x7f0e02fb
+
+.field public static final group_by_location:I = 0x7f0e02f8
+
+.field public static final group_by_size:I = 0x7f0e02fd
+
+.field public static final group_by_tags:I = 0x7f0e02fa
+
+.field public static final group_by_time:I = 0x7f0e02f9
+
+.field public static final hdr_off_desc:I = 0x7f0e01cd
+
+.field public static final hdr_on_desc:I = 0x7f0e01ce
+
+.field public static final hdr_plus_auto_desc:I = 0x7f0e01cc
+
+.field public static final hdr_plus_flash_auto_desc:I = 0x7f0e01d3
+
+.field public static final hdr_plus_flash_off_desc:I = 0x7f0e01d2
+
+.field public static final hdr_plus_flash_on_desc:I = 0x7f0e01d4
+
+.field public static final hdr_plus_off_desc:I = 0x7f0e01ca
+
+.field public static final hdr_plus_on_desc:I = 0x7f0e01cb
+
+.field public static final heart_dialog_cancel:I = 0x7f0e03df
+
+.field public static final heart_dialog_hint:I = 0x7f0e03de
+
+.field public static final heart_rate_monitoring:I = 0x7f0e03dd
+
+.field public static final heart_rate_prompt_01:I = 0x7f0e03e0
+
+.field public static final heart_rate_prompt_02:I = 0x7f0e03e1
+
+.field public static final heart_rate_prompt_03:I = 0x7f0e03e2
+
+.field public static final heart_rate_prompt_04:I = 0x7f0e03e3
+
+.field public static final heart_status_four:I = 0x7f0e03e7
+
+.field public static final heart_status_one:I = 0x7f0e03e4
+
+.field public static final heart_status_three:I = 0x7f0e03e6
+
+.field public static final heart_status_two:I = 0x7f0e03e5
+
+.field public static final height:I = 0x7f0e00ad
+
+.field public static final help:I = 0x7f0e0339
+
+.field public static final hide_imagestate_panel:I = 0x7f0e000a
+
+.field public static final highlight_recovery:I = 0x7f0e0034
+
+.field public static final history:I = 0x7f0e0018
+
+.field public static final history_original:I = 0x7f0e001a
+
+.field public static final hue:I = 0x7f0e0032
+
+.field public static final imageDraw:I = 0x7f0e003d
+
+.field public static final imageState:I = 0x7f0e001b
+
+.field public static final image_file_name_format:I = 0x7f0e013b
+
+.field public static final immediate_capture_toggle:I = 0x7f0e01f6
+
+.field public static final import_complete:I = 0x7f0e0322
+
+.field public static final import_fail:I = 0x7f0e0323
+
+.field public static final ingest_empty_device:I = 0x7f0e034a
+
+.field public static final ingest_import:I = 0x7f0e0344
+
+.field public static final ingest_import_complete:I = 0x7f0e0345
+
+.field public static final ingest_importing:I = 0x7f0e0349
+
+.field public static final ingest_no_device:I = 0x7f0e034b
+
+.field public static final ingest_scanning:I = 0x7f0e0346
+
+.field public static final ingest_scanning_done:I = 0x7f0e0348
+
+.field public static final ingest_sorting:I = 0x7f0e0347
+
+.field public static final ingest_switch_photo_fullscreen:I = 0x7f0e034d
+
+.field public static final ingest_switch_photo_grid:I = 0x7f0e034c
+
+.field public static final iso:I = 0x7f0e00b9
+
+.field public static final keep_all:I = 0x7f0e0387
+
+.field public static final keep_select:I = 0x7f0e0388
+
+.field public static final key_setting_picture_size:I = 0x7f0e0282
+
+.field public static final key_setting_preview_size:I = 0x7f0e0280
+
+.field public static final key_setting_save_output_type:I = 0x7f0e0285
+
+.field public static final key_setting_use_ae_lock:I = 0x7f0e0283
+
+.field public static final key_setting_use_awb_lock:I = 0x7f0e0284
+
+.field public static final key_setting_zsl_mode_type:I = 0x7f0e0286
+
+.field public static final kmeans:I = 0x7f0e0045
+
+.field public static final loading:I = 0x7f0e02d6
+
+.field public static final loading_account:I = 0x7f0e02d2
+
+.field public static final loading_best_frame:I = 0x7f0e03dc
+
+.field public static final loading_image:I = 0x7f0e02d1
+
+.field public static final loading_video:I = 0x7f0e02d0
+
+.field public static final location:I = 0x7f0e00aa
+
+.field public static final locations:I = 0x7f0e032e
+
+.field public static final low_power_warning_text:I = 0x7f0e029c
+
+.field public static final make_available_offline:I = 0x7f0e030b
+
+.field public static final maker:I = 0x7f0e00b2
+
+.field public static final manual:I = 0x7f0e00bb
+
+.field public static final manual_exposure_compensation_desc:I = 0x7f0e01e7
+
+.field public static final media_accessibility_peek:I = 0x7f0e016a
+
+.field public static final media_date_content_description:I = 0x7f0e016e
+
+.field public static final media_processing_content_description:I = 0x7f0e0174
+
+.field public static final menu_camera:I = 0x7f0e036d
+
+.field public static final menu_search:I = 0x7f0e036e
+
+.field public static final menu_settings:I = 0x7f0e0012
+
+.field public static final mimetype:I = 0x7f0e00b0
+
+.field public static final mirror:I = 0x7f0e0041
+
+.field public static final mode_camera:I = 0x7f0e01bc
+
+.field public static final mode_camera_desc:I = 0x7f0e01c3
+
+.field public static final mode_cancle_title_hfr:I = 0x7f0e028c
+
+.field public static final mode_cancle_title_lfr:I = 0x7f0e028d
+
+.field public static final mode_cancle_title_pano:I = 0x7f0e028e
+
+.field public static final mode_hfr_recording_desc:I = 0x7f0e0243
+
+.field public static final mode_hfr_recording_quality_60fps:I = 0x7f0e028b
+
+.field public static final mode_lfr_recording_desc:I = 0x7f0e0242
+
+.field public static final mode_lfr_recording_quality_1080p:I = 0x7f0e0289
+
+.field public static final mode_lfr_recording_quality_480p:I = 0x7f0e0287
+
+.field public static final mode_lfr_recording_quality_4K:I = 0x7f0e028a
+
+.field public static final mode_lfr_recording_quality_720p:I = 0x7f0e0288
+
+.field public static final mode_panorama:I = 0x7f0e01c1
+
+.field public static final mode_panorama_desc:I = 0x7f0e01c6
+
+.field public static final mode_photosphere:I = 0x7f0e01be
+
+.field public static final mode_photosphere_desc:I = 0x7f0e01c5
+
+.field public static final mode_qrcord_desc:I = 0x7f0e0241
+
+.field public static final mode_refocus:I = 0x7f0e01c2
+
+.field public static final mode_refocus_desc:I = 0x7f0e01c7
+
+.field public static final mode_selector_swipe_hint_text:I = 0x7f0e02ae
+
+.field public static final mode_settings:I = 0x7f0e01bb
+
+.field public static final mode_timelapse:I = 0x7f0e01bf
+
+.field public static final mode_video:I = 0x7f0e01bd
+
+.field public static final mode_video_desc:I = 0x7f0e01c4
+
+.field public static final mode_wideangle:I = 0x7f0e01c0
+
+.field public static final model:I = 0x7f0e00b3
+
+.field public static final month:I = 0x7f0e03bd
+
+.field public static final more_options_desc:I = 0x7f0e01df
+
+.field public static final mosaic:I = 0x7f0e03db
+
+.field public static final move_to_parent_folder:I = 0x7f0e0384
+
+.field public static final movie_view_label:I = 0x7f0e02cf
+
+.field public static final multiface_crop_help:I = 0x7f0e02dd
+
+.field public static final mute_action:I = 0x7f0e02f6
+
+.field public static final muting:I = 0x7f0e033f
+
+.field public static final negative:I = 0x7f0e0042
+
+.field public static final no_albums:I = 0x7f0e03a9
+
+.field public static final no_albums_alert:I = 0x7f0e0308
+
+.field public static final no_connectivity:I = 0x7f0e0300
+
+.field public static final no_external_storage:I = 0x7f0e033b
+
+.field public static final no_external_storage_title:I = 0x7f0e033a
+
+.field public static final no_location:I = 0x7f0e02ff
+
+.field public static final no_photos:I = 0x7f0e03a8
+
+.field public static final no_storage:I = 0x7f0e00c6
+
+.field public static final no_such_item:I = 0x7f0e02f2
+
+.field public static final no_thumbnail:I = 0x7f0e02d9
+
+.field public static final none:I = 0x7f0e0043
+
+.field public static final not_selectable_in_scene_mode:I = 0x7f0e012f
+
+.field public static final ok:I = 0x7f0e02dc
+
+.field public static final only_select:I = 0x7f0e03b2
+
+.field public static final open_source_licenses:I = 0x7f0e0202
+
+.field public static final orientation:I = 0x7f0e00ae
+
+.field public static final original:I = 0x7f0e0004
+
+.field public static final original_picture_text:I = 0x7f0e0002
+
+.field public static final other_album:I = 0x7f0e03cf
+
+.field public static final pano_capture_indication:I = 0x7f0e0143
+
+.field public static final pano_dialog_panorama_failed:I = 0x7f0e0141
+
+.field public static final pano_dialog_prepare_preview:I = 0x7f0e0140
+
+.field public static final pano_dialog_title:I = 0x7f0e0142
+
+.field public static final pano_dialog_waiting_previous:I = 0x7f0e0144
+
+.field public static final pano_file_name_format:I = 0x7f0e013d
+
+.field public static final pano_orientation_fisheye:I = 0x7f0e0200
+
+.field public static final pano_orientation_horizontal:I = 0x7f0e01fd
+
+.field public static final pano_orientation_vertical:I = 0x7f0e01fe
+
+.field public static final pano_orientation_wide:I = 0x7f0e01ff
+
+.field public static final pano_progress_text:I = 0x7f0e0342
+
+.field public static final pano_review_rendering:I = 0x7f0e0146
+
+.field public static final pano_review_saving_indication_str:I = 0x7f0e0145
+
+.field public static final pano_too_fast_prompt:I = 0x7f0e013f
+
+.field public static final pano_view:I = 0x7f0e027e
+
+.field public static final panorama_date_content_description:I = 0x7f0e0171
+
+.field public static final path:I = 0x7f0e00ab
+
+.field public static final people:I = 0x7f0e032f
+
+.field public static final photo_accessibility_peek:I = 0x7f0e016b
+
+.field public static final photo_aspect_ratio_selection_content:I = 0x7f0e021f
+
+.field public static final photo_count:I = 0x7f0e0382
+
+.field public static final photo_date_content_description:I = 0x7f0e016f
+
+.field public static final photo_editor:I = 0x7f0e01b6
+
+.field public static final photo_size_selection_title:I = 0x7f0e021e
+
+.field public static final photopage_bottom_controls_select_text:I = 0x7f0e02b4
+
+.field public static final photosphere_date_content_description:I = 0x7f0e0172
+
+.field public static final picasa_posts:I = 0x7f0e030a
+
+.field public static final please_select:I = 0x7f0e03ab
+
+.field public static final please_wait:I = 0x7f0e00c1
+
+.field public static final pref_beauty_face_default:I = 0x7f0e00fc
+
+.field public static final pref_beauty_face_entry_god_value:I = 0x7f0e0248
+
+.field public static final pref_beauty_face_entry_goddress_value:I = 0x7f0e0249
+
+.field public static final pref_beauty_face_entry_off:I = 0x7f0e0244
+
+.field public static final pref_beauty_face_entry_off_value:I = 0x7f0e0246
+
+.field public static final pref_beauty_face_entry_on:I = 0x7f0e0245
+
+.field public static final pref_beauty_face_entry_ordinary_value:I = 0x7f0e0247
+
+.field public static final pref_beauty_face_label_off:I = 0x7f0e024a
+
+.field public static final pref_beauty_face_label_on:I = 0x7f0e024b
+
+.field public static final pref_boolean_false:I = 0x7f0e0226
+
+.field public static final pref_boolean_true:I = 0x7f0e0227
+
+.field public static final pref_camcorder_settings_category:I = 0x7f0e00ed
+
+.field public static final pref_camera_countdown_label_fifteen:I = 0x7f0e012e
+
+.field public static final pref_camera_countdown_label_five:I = 0x7f0e012c
+
+.field public static final pref_camera_countdown_label_off:I = 0x7f0e0129
+
+.field public static final pref_camera_countdown_label_one:I = 0x7f0e012a
+
+.field public static final pref_camera_countdown_label_ten:I = 0x7f0e012d
+
+.field public static final pref_camera_countdown_label_three:I = 0x7f0e012b
+
+.field public static final pref_camera_exposure_compensation:I = 0x7f0e021c
+
+.field public static final pref_camera_flashmode_default:I = 0x7f0e00fb
+
+.field public static final pref_camera_flashmode_entry_auto:I = 0x7f0e0103
+
+.field public static final pref_camera_flashmode_entry_off:I = 0x7f0e0105
+
+.field public static final pref_camera_flashmode_entry_on:I = 0x7f0e0104
+
+.field public static final pref_camera_flashmode_label:I = 0x7f0e0102
+
+.field public static final pref_camera_flashmode_label_auto:I = 0x7f0e0106
+
+.field public static final pref_camera_flashmode_label_off:I = 0x7f0e0108
+
+.field public static final pref_camera_flashmode_label_on:I = 0x7f0e0107
+
+.field public static final pref_camera_flashmode_no_flash:I = 0x7f0e0100
+
+.field public static final pref_camera_flashmode_title:I = 0x7f0e0101
+
+.field public static final pref_camera_focusmode_default:I = 0x7f0e00fa
+
+.field public static final pref_camera_focusmode_entry_auto:I = 0x7f0e00f4
+
+.field public static final pref_camera_focusmode_entry_infinity:I = 0x7f0e00f5
+
+.field public static final pref_camera_focusmode_entry_macro:I = 0x7f0e00f6
+
+.field public static final pref_camera_focusmode_label_auto:I = 0x7f0e00f7
+
+.field public static final pref_camera_focusmode_label_infinity:I = 0x7f0e00f8
+
+.field public static final pref_camera_focusmode_label_macro:I = 0x7f0e00f9
+
+.field public static final pref_camera_focusmode_title:I = 0x7f0e00f3
+
+.field public static final pref_camera_hdr_default:I = 0x7f0e0133
+
+.field public static final pref_camera_hdr_label:I = 0x7f0e0135
+
+.field public static final pref_camera_hdr_plus_default:I = 0x7f0e0134
+
+.field public static final pref_camera_hdr_plus_flashmode_default:I = 0x7f0e00ff
+
+.field public static final pref_camera_id_default:I = 0x7f0e00cc
+
+.field public static final pref_camera_id_entry_back:I = 0x7f0e00cf
+
+.field public static final pref_camera_id_entry_back_value:I = 0x7f0e00d1
+
+.field public static final pref_camera_id_entry_front:I = 0x7f0e00d0
+
+.field public static final pref_camera_id_entry_front_value:I = 0x7f0e00d2
+
+.field public static final pref_camera_id_index_back:I = 0x7f0e00cd
+
+.field public static final pref_camera_id_index_front:I = 0x7f0e00ce
+
+.field public static final pref_camera_id_label_back:I = 0x7f0e0136
+
+.field public static final pref_camera_id_label_front:I = 0x7f0e0137
+
+.field public static final pref_camera_id_title:I = 0x7f0e00cb
+
+.field public static final pref_camera_jpeg_quality_fine:I = 0x7f0e01f8
+
+.field public static final pref_camera_jpeg_quality_normal:I = 0x7f0e01f7
+
+.field public static final pref_camera_jpeg_quality_superfine:I = 0x7f0e01f9
+
+.field public static final pref_camera_location_label:I = 0x7f0e00d5
+
+.field public static final pref_camera_picturesize_default:I = 0x7f0e00f2
+
+.field public static final pref_camera_picturesize_entry_13mp:I = 0x7f0e0353
+
+.field public static final pref_camera_picturesize_entry_1_3mp:I = 0x7f0e035a
+
+.field public static final pref_camera_picturesize_entry_1mp:I = 0x7f0e035b
+
+.field public static final pref_camera_picturesize_entry_2mp:I = 0x7f0e0358
+
+.field public static final pref_camera_picturesize_entry_2mp_wide:I = 0x7f0e0359
+
+.field public static final pref_camera_picturesize_entry_3mp:I = 0x7f0e0357
+
+.field public static final pref_camera_picturesize_entry_4mp:I = 0x7f0e0356
+
+.field public static final pref_camera_picturesize_entry_5mp:I = 0x7f0e0355
+
+.field public static final pref_camera_picturesize_entry_8mp:I = 0x7f0e0354
+
+.field public static final pref_camera_picturesize_entry_large:I = 0x7f0e00ef
+
+.field public static final pref_camera_picturesize_entry_medium:I = 0x7f0e00f0
+
+.field public static final pref_camera_picturesize_entry_qvga:I = 0x7f0e035d
+
+.field public static final pref_camera_picturesize_entry_small:I = 0x7f0e00f1
+
+.field public static final pref_camera_picturesize_entry_vga:I = 0x7f0e035c
+
+.field public static final pref_camera_picturesize_title:I = 0x7f0e00ee
+
+.field public static final pref_camera_recordlocation_default:I = 0x7f0e00d4
+
+.field public static final pref_camera_recordlocation_title:I = 0x7f0e0351
+
+.field public static final pref_camera_save_location_title:I = 0x7f0e00d3
+
+.field public static final pref_camera_scenemode_default:I = 0x7f0e0116
+
+.field public static final pref_camera_scenemode_entry_action:I = 0x7f0e0120
+
+.field public static final pref_camera_scenemode_entry_auto:I = 0x7f0e0118
+
+.field public static final pref_camera_scenemode_entry_hdr:I = 0x7f0e011a
+
+.field public static final pref_camera_scenemode_entry_hdr_plus:I = 0x7f0e0119
+
+.field public static final pref_camera_scenemode_entry_night:I = 0x7f0e0121
+
+.field public static final pref_camera_scenemode_entry_party:I = 0x7f0e0123
+
+.field public static final pref_camera_scenemode_entry_sunset:I = 0x7f0e0122
+
+.field public static final pref_camera_scenemode_entry_turn_hdr_off:I = 0x7f0e011f
+
+.field public static final pref_camera_scenemode_entry_turn_hdr_on:I = 0x7f0e011e
+
+.field public static final pref_camera_scenemode_entry_turn_hdr_plus_auto:I = 0x7f0e011d
+
+.field public static final pref_camera_scenemode_entry_turn_hdr_plus_off:I = 0x7f0e011c
+
+.field public static final pref_camera_scenemode_entry_turn_hdr_plus_on:I = 0x7f0e011b
+
+.field public static final pref_camera_scenemode_label_action:I = 0x7f0e0125
+
+.field public static final pref_camera_scenemode_label_auto:I = 0x7f0e0124
+
+.field public static final pref_camera_scenemode_label_night:I = 0x7f0e0126
+
+.field public static final pref_camera_scenemode_label_party:I = 0x7f0e0128
+
+.field public static final pref_camera_scenemode_label_sunset:I = 0x7f0e0127
+
+.field public static final pref_camera_scenemode_title:I = 0x7f0e0117
+
+.field public static final pref_camera_settings_category:I = 0x7f0e00ec
+
+.field public static final pref_camera_startup_index_default:I = 0x7f0e01fa
+
+.field public static final pref_camera_timer_default:I = 0x7f0e00d7
+
+.field public static final pref_camera_timer_sound_default:I = 0x7f0e00d8
+
+.field public static final pref_camera_timer_sound_title:I = 0x7f0e00d9
+
+.field public static final pref_camera_timer_title:I = 0x7f0e00d6
+
+.field public static final pref_camera_video_flashmode_default:I = 0x7f0e00fe
+
+.field public static final pref_camera_whitebalance_default:I = 0x7f0e0109
+
+.field public static final pref_camera_whitebalance_entry_auto:I = 0x7f0e010c
+
+.field public static final pref_camera_whitebalance_entry_cloudy:I = 0x7f0e0110
+
+.field public static final pref_camera_whitebalance_entry_daylight:I = 0x7f0e010e
+
+.field public static final pref_camera_whitebalance_entry_fluorescent:I = 0x7f0e010f
+
+.field public static final pref_camera_whitebalance_entry_incandescent:I = 0x7f0e010d
+
+.field public static final pref_camera_whitebalance_label:I = 0x7f0e010b
+
+.field public static final pref_camera_whitebalance_label_auto:I = 0x7f0e0111
+
+.field public static final pref_camera_whitebalance_label_cloudy:I = 0x7f0e0115
+
+.field public static final pref_camera_whitebalance_label_daylight:I = 0x7f0e0113
+
+.field public static final pref_camera_whitebalance_label_fluorescent:I = 0x7f0e0114
+
+.field public static final pref_camera_whitebalance_label_incandescent:I = 0x7f0e0112
+
+.field public static final pref_camera_whitebalance_title:I = 0x7f0e010a
+
+.field public static final pref_category_about:I = 0x7f0e0206
+
+.field public static final pref_category_advanced:I = 0x7f0e021b
+
+.field public static final pref_category_general:I = 0x7f0e0204
+
+.field public static final pref_category_resolution_quality:I = 0x7f0e0205
+
+.field public static final pref_exposure_default:I = 0x7f0e0131
+
+.field public static final pref_exposure_label:I = 0x7f0e0132
+
+.field public static final pref_exposure_title:I = 0x7f0e0130
+
+.field public static final pref_face_cont_default:I = 0x7f0e00fd
+
+.field public static final pref_face_cont_entry_off:I = 0x7f0e0252
+
+.field public static final pref_face_cont_entry_off_value:I = 0x7f0e0254
+
+.field public static final pref_face_cont_entry_on:I = 0x7f0e0253
+
+.field public static final pref_face_cont_entry_on_value:I = 0x7f0e0255
+
+.field public static final pref_face_cont_label_off:I = 0x7f0e0256
+
+.field public static final pref_face_cont_label_on:I = 0x7f0e0257
+
+.field public static final pref_filmstrip_peek_anim_play_times:I = 0x7f0e0203
+
+.field public static final pref_key_motionless_threshold:I = 0x7f0e008c
+
+.field public static final pref_key_save_input_images:I = 0x7f0e0084
+
+.field public static final pref_key_save_output_type:I = 0x7f0e0091
+
+.field public static final pref_key_sensor_correction_type:I = 0x7f0e0087
+
+.field public static final pref_key_sensor_correction_value_0:I = 0x7f0e0088
+
+.field public static final pref_key_sensor_correction_value_1:I = 0x7f0e0089
+
+.field public static final pref_key_sensor_correction_value_2:I = 0x7f0e008a
+
+.field public static final pref_key_use_ae_lock:I = 0x7f0e008e
+
+.field public static final pref_key_use_awb_lock:I = 0x7f0e008f
+
+.field public static final pref_key_use_brightness_correction:I = 0x7f0e0086
+
+.field public static final pref_key_use_preview_image:I = 0x7f0e008d
+
+.field public static final pref_key_use_sensor_alignment_when_failed:I = 0x7f0e0085
+
+.field public static final pref_key_use_sensor_threshold:I = 0x7f0e008b
+
+.field public static final pref_key_zsl_mode_type:I = 0x7f0e0090
+
+.field public static final pref_shimmy_play_times:I = 0x7f0e01fb
+
+.field public static final pref_storage_select_0:I = 0x7f0e0295
+
+.field public static final pref_storage_select_1:I = 0x7f0e0296
+
+.field public static final pref_storage_select_default:I = 0x7f0e0293
+
+.field public static final pref_storage_select_key:I = 0x7f0e02b6
+
+.field public static final pref_storage_select_title:I = 0x7f0e0294
+
+.field public static final pref_title_build_version:I = 0x7f0e0207
+
+.field public static final pref_title_motionless_threshold:I = 0x7f0e026b
+
+.field public static final pref_title_save_input_images:I = 0x7f0e0265
+
+.field public static final pref_title_save_output_type:I = 0x7f0e0270
+
+.field public static final pref_title_sensor_correction:I = 0x7f0e0269
+
+.field public static final pref_title_sensor_correction_type:I = 0x7f0e0268
+
+.field public static final pref_title_setting:I = 0x7f0e0264
+
+.field public static final pref_title_use_ae_lock:I = 0x7f0e026d
+
+.field public static final pref_title_use_awb_lock:I = 0x7f0e026e
+
+.field public static final pref_title_use_preview_image:I = 0x7f0e026c
+
+.field public static final pref_title_use_sensor_alignment_when_failed:I = 0x7f0e0266
+
+.field public static final pref_title_use_sensor_threshold:I = 0x7f0e026a
+
+.field public static final pref_title_usr_brightness_correction:I = 0x7f0e0267
+
+.field public static final pref_title_zsl_mode:I = 0x7f0e026f
+
+.field public static final pref_video_effect_default:I = 0x7f0e0148
+
+.field public static final pref_video_effect_title:I = 0x7f0e0149
+
+.field public static final pref_video_high_frame_rate_120_fps:I = 0x7f0e00e8
+
+.field public static final pref_video_high_frame_rate_240_fps:I = 0x7f0e00e9
+
+.field public static final pref_video_high_frame_rate_960_fps:I = 0x7f0e00ea
+
+.field public static final pref_video_high_frame_rate_default:I = 0x7f0e00e7
+
+.field public static final pref_video_high_frame_rate_title:I = 0x7f0e00eb
+
+.field public static final pref_video_quality_default:I = 0x7f0e0352
+
+.field public static final pref_video_quality_entry_1080p:I = 0x7f0e020e
+
+.field public static final pref_video_quality_entry_1080p_notrans:I = 0x7f0e0215
+
+.field public static final pref_video_quality_entry_2160p:I = 0x7f0e0210
+
+.field public static final pref_video_quality_entry_2160p_notrans:I = 0x7f0e0217
+
+.field public static final pref_video_quality_entry_480p:I = 0x7f0e020c
+
+.field public static final pref_video_quality_entry_480p_notrans:I = 0x7f0e0213
+
+.field public static final pref_video_quality_entry_720p:I = 0x7f0e020d
+
+.field public static final pref_video_quality_entry_720p_notrans:I = 0x7f0e0214
+
+.field public static final pref_video_quality_entry_cif:I = 0x7f0e020b
+
+.field public static final pref_video_quality_entry_cif_notrans:I = 0x7f0e0212
+
+.field public static final pref_video_quality_entry_high:I = 0x7f0e0209
+
+.field public static final pref_video_quality_entry_low:I = 0x7f0e0208
+
+.field public static final pref_video_quality_entry_qcif:I = 0x7f0e020a
+
+.field public static final pref_video_quality_entry_qcif_notrans:I = 0x7f0e0211
+
+.field public static final pref_video_quality_entry_qvga:I = 0x7f0e020f
+
+.field public static final pref_video_quality_entry_qvga_notrans:I = 0x7f0e0216
+
+.field public static final pref_video_quality_large:I = 0x7f0e00e2
+
+.field public static final pref_video_quality_medium:I = 0x7f0e00e3
+
+.field public static final pref_video_quality_small:I = 0x7f0e00e4
+
+.field public static final pref_video_quality_title:I = 0x7f0e00e1
+
+.field public static final pref_video_time_lapse_frame_interval_1000:I = 0x7f0e017e
+
+.field public static final pref_video_time_lapse_frame_interval_10000:I = 0x7f0e0186
+
+.field public static final pref_video_time_lapse_frame_interval_10800000:I = 0x7f0e019c
+
+.field public static final pref_video_time_lapse_frame_interval_12000:I = 0x7f0e0187
+
+.field public static final pref_video_time_lapse_frame_interval_120000:I = 0x7f0e018d
+
+.field public static final pref_video_time_lapse_frame_interval_1440000:I = 0x7f0e0196
+
+.field public static final pref_video_time_lapse_frame_interval_14400000:I = 0x7f0e019d
+
+.field public static final pref_video_time_lapse_frame_interval_1500:I = 0x7f0e017f
+
+.field public static final pref_video_time_lapse_frame_interval_15000:I = 0x7f0e0188
+
+.field public static final pref_video_time_lapse_frame_interval_150000:I = 0x7f0e018e
+
+.field public static final pref_video_time_lapse_frame_interval_180000:I = 0x7f0e018f
+
+.field public static final pref_video_time_lapse_frame_interval_1800000:I = 0x7f0e0197
+
+.field public static final pref_video_time_lapse_frame_interval_18000000:I = 0x7f0e019e
+
+.field public static final pref_video_time_lapse_frame_interval_2000:I = 0x7f0e0180
+
+.field public static final pref_video_time_lapse_frame_interval_21600000:I = 0x7f0e019f
+
+.field public static final pref_video_time_lapse_frame_interval_24000:I = 0x7f0e0189
+
+.field public static final pref_video_time_lapse_frame_interval_240000:I = 0x7f0e0190
+
+.field public static final pref_video_time_lapse_frame_interval_2500:I = 0x7f0e0181
+
+.field public static final pref_video_time_lapse_frame_interval_3000:I = 0x7f0e0182
+
+.field public static final pref_video_time_lapse_frame_interval_30000:I = 0x7f0e018a
+
+.field public static final pref_video_time_lapse_frame_interval_300000:I = 0x7f0e0191
+
+.field public static final pref_video_time_lapse_frame_interval_360000:I = 0x7f0e0192
+
+.field public static final pref_video_time_lapse_frame_interval_3600000:I = 0x7f0e0198
+
+.field public static final pref_video_time_lapse_frame_interval_36000000:I = 0x7f0e01a0
+
+.field public static final pref_video_time_lapse_frame_interval_4000:I = 0x7f0e0183
+
+.field public static final pref_video_time_lapse_frame_interval_43200000:I = 0x7f0e01a1
+
+.field public static final pref_video_time_lapse_frame_interval_500:I = 0x7f0e017d
+
+.field public static final pref_video_time_lapse_frame_interval_5000:I = 0x7f0e0184
+
+.field public static final pref_video_time_lapse_frame_interval_5400000:I = 0x7f0e0199
+
+.field public static final pref_video_time_lapse_frame_interval_54000000:I = 0x7f0e01a2
+
+.field public static final pref_video_time_lapse_frame_interval_6000:I = 0x7f0e0185
+
+.field public static final pref_video_time_lapse_frame_interval_60000:I = 0x7f0e018b
+
+.field public static final pref_video_time_lapse_frame_interval_600000:I = 0x7f0e0193
+
+.field public static final pref_video_time_lapse_frame_interval_720000:I = 0x7f0e0194
+
+.field public static final pref_video_time_lapse_frame_interval_7200000:I = 0x7f0e019a
+
+.field public static final pref_video_time_lapse_frame_interval_86400000:I = 0x7f0e01a3
+
+.field public static final pref_video_time_lapse_frame_interval_90000:I = 0x7f0e018c
+
+.field public static final pref_video_time_lapse_frame_interval_900000:I = 0x7f0e0195
+
+.field public static final pref_video_time_lapse_frame_interval_9000000:I = 0x7f0e019b
+
+.field public static final pref_video_time_lapse_frame_interval_default:I = 0x7f0e00e6
+
+.field public static final pref_video_time_lapse_frame_interval_off:I = 0x7f0e017c
+
+.field public static final pref_video_time_lapse_frame_interval_title:I = 0x7f0e00e5
+
+.field public static final pref_volum_key_function_0:I = 0x7f0e0299
+
+.field public static final pref_volum_key_function_1:I = 0x7f0e029a
+
+.field public static final pref_volum_key_function_default:I = 0x7f0e0298
+
+.field public static final pref_volum_key_function_title:I = 0x7f0e0297
+
+.field public static final preparing_sd:I = 0x7f0e00c7
+
+.field public static final print_image:I = 0x7f0e000c
+
+.field public static final process_caching_requests:I = 0x7f0e02f4
+
+.field public static final processing_hdr_plus:I = 0x7f0e01fc
+
+.field public static final quality:I = 0x7f0e000f
+
+.field public static final rate1:I = 0x7f0e03c2
+
+.field public static final rate2:I = 0x7f0e03c3
+
+.field public static final rate3:I = 0x7f0e03c4
+
+.field public static final recorder_start_fail_text:I = 0x7f0e02a1
+
+.field public static final recorder_using_warning_text:I = 0x7f0e02a0
+
+.field public static final redeye:I = 0x7f0e003c
+
+.field public static final refocus_date_content_description:I = 0x7f0e0173
+
+.field public static final remember_location_no:I = 0x7f0e01ae
+
+.field public static final remember_location_prompt:I = 0x7f0e01ad
+
+.field public static final remember_location_title:I = 0x7f0e01ac
+
+.field public static final remember_location_yes:I = 0x7f0e01af
+
+.field public static final remove_favorites:I = 0x7f0e03c7
+
+.field public static final remove_to_favo_succ:I = 0x7f0e03e9
+
+.field public static final reset:I = 0x7f0e0019
+
+.field public static final reset_effect:I = 0x7f0e001e
+
+.field public static final resume_playing_message:I = 0x7f0e02d4
+
+.field public static final resume_playing_restart:I = 0x7f0e02da
+
+.field public static final resume_playing_resume:I = 0x7f0e02d5
+
+.field public static final resume_playing_title:I = 0x7f0e02d3
+
+.field public static final retake_button_description:I = 0x7f0e01e2
+
+.field public static final review_cancel:I = 0x7f0e034f
+
+.field public static final review_ok:I = 0x7f0e0350
+
+.field public static final rotate:I = 0x7f0e0040
+
+.field public static final rotate_left:I = 0x7f0e00a0
+
+.field public static final rotate_right:I = 0x7f0e00a1
+
+.field public static final saturation:I = 0x7f0e002f
+
+.field public static final save:I = 0x7f0e0343
+
+.field public static final save_all:I = 0x7f0e03b3
+
+.field public static final save_and_cover:I = 0x7f0e03c8
+
+.field public static final save_and_exit:I = 0x7f0e0015
+
+.field public static final save_and_processing:I = 0x7f0e0016
+
+.field public static final save_as_new:I = 0x7f0e03c9
+
+.field public static final save_before_exit:I = 0x7f0e0014
+
+.field public static final save_best_selected_video_successful:I = 0x7f0e03da
+
+.field public static final save_confirmation:I = 0x7f0e0386
+
+.field public static final save_dir_base:I = 0x7f0e0274
+
+.field public static final save_dir_input:I = 0x7f0e0275
+
+.field public static final save_dir_preview_img:I = 0x7f0e0276
+
+.field public static final save_dir_still_img:I = 0x7f0e0277
+
+.field public static final save_error:I = 0x7f0e02e0
+
+.field public static final save_file_input_sensor_info:I = 0x7f0e027c
+
+.field public static final save_file_sa:I = 0x7f0e0279
+
+.field public static final save_file_setting:I = 0x7f0e027d
+
+.field public static final save_file_sg:I = 0x7f0e0278
+
+.field public static final save_file_so:I = 0x7f0e027a
+
+.field public static final save_file_sr:I = 0x7f0e027b
+
+.field public static final save_into:I = 0x7f0e0340
+
+.field public static final save_pic:I = 0x7f0e03c0
+
+.field public static final save_select_all:I = 0x7f0e03b1
+
+.field public static final save_video_failed:I = 0x7f0e03d5
+
+.field public static final save_video_successful:I = 0x7f0e03d4
+
+.field public static final saving_image:I = 0x7f0e02de
+
+.field public static final saving_tiny_planet:I = 0x7f0e01b3
+
+.field public static final select:I = 0x7f0e03aa
+
+.field public static final select_album:I = 0x7f0e02e6
+
+.field public static final select_all:I = 0x7f0e02ed
+
+.field public static final select_collect:I = 0x7f0e03b0
+
+.field public static final select_finish:I = 0x7f0e0385
+
+.field public static final select_group:I = 0x7f0e02e7
+
+.field public static final select_image:I = 0x7f0e02e3
+
+.field public static final select_item:I = 0x7f0e02e5
+
+.field public static final select_output_settings:I = 0x7f0e000e
+
+.field public static final select_share_tip:I = 0x7f0e03d7
+
+.field public static final select_video:I = 0x7f0e02e4
+
+.field public static final selected_continues_folder:I = 0x7f0e03a4
+
+.field public static final selected_image_video:I = 0x7f0e03a3
+
+.field public static final selected_photo:I = 0x7f0e03a1
+
+.field public static final selected_video:I = 0x7f0e03a2
+
+.field public static final separator:I = 0x7f0e03cb
+
+.field public static final sequence_in_set:I = 0x7f0e030e
+
+.field public static final set_as:I = 0x7f0e00a5
+
+.field public static final set_duration:I = 0x7f0e01aa
+
+.field public static final set_image:I = 0x7f0e0096
+
+.field public static final set_label_all_albums:I = 0x7f0e0319
+
+.field public static final set_label_local_albums:I = 0x7f0e031a
+
+.field public static final set_label_mtp_devices:I = 0x7f0e031b
+
+.field public static final set_label_picasa_albums:I = 0x7f0e031c
+
+.field public static final set_time_interval:I = 0x7f0e01a8
+
+.field public static final set_time_interval_help:I = 0x7f0e01a9
+
+.field public static final set_wallpaper:I = 0x7f0e02e8
+
+.field public static final setting_auto:I = 0x7f0e00dc
+
+.field public static final setting_auto_value:I = 0x7f0e00df
+
+.field public static final setting_back_camera_photo:I = 0x7f0e01ef
+
+.field public static final setting_back_camera_video:I = 0x7f0e01f0
+
+.field public static final setting_camera_sound:I = 0x7f0e022b
+
+.field public static final setting_default_camera:I = 0x7f0e01f3
+
+.field public static final setting_front_camera_photo:I = 0x7f0e01f1
+
+.field public static final setting_front_camera_video:I = 0x7f0e01f2
+
+.field public static final setting_front_shooting_flip:I = 0x7f0e022c
+
+.field public static final setting_google_help_and_feedback:I = 0x7f0e01f4
+
+.field public static final setting_grid_lines:I = 0x7f0e0229
+
+.field public static final setting_location:I = 0x7f0e01ee
+
+.field public static final setting_location_text:I = 0x7f0e022d
+
+.field public static final setting_none_value:I = 0x7f0e00e0
+
+.field public static final setting_off:I = 0x7f0e00da
+
+.field public static final setting_off_value:I = 0x7f0e00dd
+
+.field public static final setting_on:I = 0x7f0e00db
+
+.field public static final setting_on_value:I = 0x7f0e00de
+
+.field public static final setting_picture_size:I = 0x7f0e0281
+
+.field public static final setting_preview_size:I = 0x7f0e027f
+
+.field public static final setting_summary_aspect_ratio_and_megapixels:I = 0x7f0e0219
+
+.field public static final setting_summary_x_megapixels:I = 0x7f0e0218
+
+.field public static final setting_timer_text:I = 0x7f0e022a
+
+.field public static final setting_wallpaper:I = 0x7f0e01ba
+
+.field public static final settings:I = 0x7f0e0332
+
+.field public static final settings_cling_text:I = 0x7f0e021d
+
+.field public static final settings_close_desc:I = 0x7f0e01c9
+
+.field public static final settings_open_desc:I = 0x7f0e01c8
+
+.field public static final shadow_recovery:I = 0x7f0e0033
+
+.field public static final share:I = 0x7f0e0098
+
+.field public static final share_as_photo:I = 0x7f0e009a
+
+.field public static final share_button_description:I = 0x7f0e01e3
+
+.field public static final share_panorama:I = 0x7f0e0099
+
+.field public static final share_to:I = 0x7f0e0220
+
+.field public static final sharpness:I = 0x7f0e002c
+
+.field public static final show_all:I = 0x7f0e0304
+
+.field public static final show_images_only:I = 0x7f0e0302
+
+.field public static final show_imagestate_panel:I = 0x7f0e0009
+
+.field public static final show_on_map:I = 0x7f0e009f
+
+.field public static final show_videos_only:I = 0x7f0e0303
+
+.field public static final simple_edit:I = 0x7f0e02f3
+
+.field public static final size:I = 0x7f0e0010
+
+.field public static final size_above:I = 0x7f0e031f
+
+.field public static final size_below:I = 0x7f0e031e
+
+.field public static final size_between:I = 0x7f0e0320
+
+.field public static final slideshow:I = 0x7f0e02ef
+
+.field public static final slideshow_dream_name:I = 0x7f0e032b
+
+.field public static final smart_album:I = 0x7f0e03cd
+
+.field public static final spaceIsLow_content:I = 0x7f0e013a
+
+.field public static final speed:I = 0x7f0e03ca
+
+.field public static final splite:I = 0x7f0e03bf
+
+.field public static final startup_dialog_button_next:I = 0x7f0e0222
+
+.field public static final state_panel_original:I = 0x7f0e006a
+
+.field public static final state_panel_result:I = 0x7f0e006b
+
+.field public static final storage_no_space_clean:I = 0x7f0e029f
+
+.field public static final storage_no_space_exit:I = 0x7f0e029e
+
+.field public static final storage_no_space_text:I = 0x7f0e029d
+
+.field public static final storage_path_camera:I = 0x7f0e02aa
+
+.field public static final storage_path_dcim:I = 0x7f0e02ab
+
+.field public static final storage_remain_hint_text_photo:I = 0x7f0e0290
+
+.field public static final storage_remain_hint_text_photos:I = 0x7f0e028f
+
+.field public static final storage_remain_hint_text_video:I = 0x7f0e0291
+
+.field public static final storage_remain_hint_text_videos:I = 0x7f0e0292
+
+.field public static final storage_sdcard_mounted:I = 0x7f0e02ac
+
+.field public static final storage_sdcard_unmounted:I = 0x7f0e02ad
+
+.field public static final storage_warning_max4G:I = 0x7f0e02b5
+
+.field public static final storage_warning_text:I = 0x7f0e029b
+
+.field public static final straighten:I = 0x7f0e003e
+
+.field public static final sub_video_recording_started:I = 0x7f0e02cd
+
+.field public static final switch_photo_filmstrip:I = 0x7f0e01b9
+
+.field public static final switch_photo_fullscreen:I = 0x7f0e033d
+
+.field public static final switch_photo_grid:I = 0x7f0e033c
+
+.field public static final switch_to_camera:I = 0x7f0e02f1
+
+.field public static final sync_album_error:I = 0x7f0e0301
+
+.field public static final sync_picasa_albums:I = 0x7f0e030c
+
+.field public static final tab_albums:I = 0x7f0e0370
+
+.field public static final tab_albumset_add_title:I = 0x7f0e0381
+
+.field public static final tab_all_albums:I = 0x7f0e03ad
+
+.field public static final tab_photos:I = 0x7f0e036f
+
+.field public static final tag_enabled_id:I = 0x7f0e0201
+
+.field public static final tags:I = 0x7f0e0330
+
+.field public static final tap_to_focus:I = 0x7f0e0147
+
+.field public static final this_month:I = 0x7f0e03b9
+
+.field public static final this_week:I = 0x7f0e03ba
+
+.field public static final this_year:I = 0x7f0e03bb
+
+.field public static final time:I = 0x7f0e00a9
+
+.field public static final time_lapse_hours:I = 0x7f0e01a6
+
+.field public static final time_lapse_interval_set:I = 0x7f0e01a7
+
+.field public static final time_lapse_minutes:I = 0x7f0e01a5
+
+.field public static final time_lapse_seconds:I = 0x7f0e01a4
+
+.field public static final time_lapse_title:I = 0x7f0e00c9
+
+.field public static final times:I = 0x7f0e032d
+
+.field public static final tiny_planet_rotate:I = 0x7f0e01b5
+
+.field public static final tiny_planet_zoom:I = 0x7f0e01b4
+
+.field public static final tinyplanet:I = 0x7f0e002a
+
+.field public static final title:I = 0x7f0e00a7
+
+.field public static final title_activity_filter_show:I = 0x7f0e0000
+
+.field public static final title_activity_main:I = 0x7f0e025a
+
+.field public static final today:I = 0x7f0e03b7
+
+.field public static final torch_off_desc:I = 0x7f0e01d6
+
+.field public static final torch_on_desc:I = 0x7f0e01d5
+
+.field public static final trim_action:I = 0x7f0e00a4
+
+.field public static final trim_bar_time_left:I = 0x7f0e03c5
+
+.field public static final trim_label:I = 0x7f0e02e2
+
+.field public static final trim_too_short:I = 0x7f0e0341
+
+.field public static final trimming:I = 0x7f0e033e
+
+.field public static final try_to_set_local_album_available_offline:I = 0x7f0e00c0
+
+.field public static final undo:I = 0x7f0e009c
+
+.field public static final unit_mm:I = 0x7f0e00ba
+
+.field public static final unknown:I = 0x7f0e00bf
+
+.field public static final unsaved:I = 0x7f0e0013
+
+.field public static final untagged:I = 0x7f0e02fe
+
+.field public static final use_camera_alert:I = 0x7f0e02a3
+
+.field public static final use_camera_ok:I = 0x7f0e02a5
+
+.field public static final use_camera_quit:I = 0x7f0e02a4
+
+.field public static final use_camera_title:I = 0x7f0e02a2
+
+.field public static final use_location_alert:I = 0x7f0e02a7
+
+.field public static final use_location_ok:I = 0x7f0e02a9
+
+.field public static final use_location_quit:I = 0x7f0e02a8
+
+.field public static final use_location_title:I = 0x7f0e02a6
+
+.field public static final vibrance:I = 0x7f0e002e
+
+.field public static final video_accessibility_peek:I = 0x7f0e016c
+
+.field public static final video_camera_label:I = 0x7f0e0093
+
+.field public static final video_control_play:I = 0x7f0e017b
+
+.field public static final video_date_content_description:I = 0x7f0e0170
+
+.field public static final video_err:I = 0x7f0e00a6
+
+.field public static final video_file_name_format:I = 0x7f0e013c
+
+.field public static final video_mute_err:I = 0x7f0e02f7
+
+.field public static final video_not_exit:I = 0x7f0e03d3
+
+.field public static final video_reach_size_limit:I = 0x7f0e013e
+
+.field public static final video_recording_started:I = 0x7f0e0155
+
+.field public static final video_recording_stopped:I = 0x7f0e0156
+
+.field public static final video_snapshot_hint:I = 0x7f0e0154
+
+.field public static final view_button_description:I = 0x7f0e01e4
+
+.field public static final vignette:I = 0x7f0e0036
+
+.field public static final vignette_contrast:I = 0x7f0e003a
+
+.field public static final vignette_exposure:I = 0x7f0e0038
+
+.field public static final vignette_falloff:I = 0x7f0e003b
+
+.field public static final vignette_main:I = 0x7f0e0037
+
+.field public static final vignette_saturation:I = 0x7f0e0039
+
+.field public static final wait:I = 0x7f0e00c5
+
+.field public static final wallpaper:I = 0x7f0e02e9
+
+.field public static final wbalance:I = 0x7f0e0031
+
+.field public static final white_balance:I = 0x7f0e00b7
+
+.field public static final widget_type:I = 0x7f0e032a
+
+.field public static final widget_type_album:I = 0x7f0e0327
+
+.field public static final widget_type_photo:I = 0x7f0e0329
+
+.field public static final widget_type_shuffle:I = 0x7f0e0328
+
+.field public static final width:I = 0x7f0e00ac
+
+.field public static final x:I = 0x7f0e0011
+
+.field public static final year:I = 0x7f0e03bc
+
+.field public static final yesterday:I = 0x7f0e03b8
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 2
-
-    .prologue
-    .line 111
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0x12
-
-    if-lt v0, v1, :cond_0
-
-    .line 112
-    new-instance v0, Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoJellyBeanMr2;
-
-    invoke-direct {v0}, Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoJellyBeanMr2;-><init>()V
-
-    sput-object v0, Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat;->IMPL:Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoVersionImpl;
-
-    .line 29
-    :goto_0
-    return-void
-
-    .line 113
-    :cond_0
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    const/16 v1, 0xe
-
-    if-lt v0, v1, :cond_1
-
-    .line 114
-    new-instance v0, Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoIcsImpl;
-
-    invoke-direct {v0}, Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoIcsImpl;-><init>()V
-
-    sput-object v0, Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat;->IMPL:Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoVersionImpl;
-
-    goto :goto_0
-
-    .line 116
-    :cond_1
-    new-instance v0, Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoStubImpl;
-
-    invoke-direct {v0}, Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoStubImpl;-><init>()V
-
-    sput-object v0, Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat;->IMPL:Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoVersionImpl;
-
-    goto :goto_0
-.end method
-
-.method private constructor <init>()V
+.method public constructor <init>()V
     .locals 0
 
     .prologue
-    .line 280
+    .line 3551
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
-.end method
-
-.method public static capabilityToString(I)Ljava/lang/String;
-    .locals 1
-    .param p0, "capability"    # I
-
-    .prologue
-    .line 436
-    packed-switch p0, :pswitch_data_0
-
-    .line 446
-    :pswitch_0
-    const-string/jumbo v0, "UNKNOWN"
-
-    return-object v0
-
-    .line 438
-    :pswitch_1
-    const-string/jumbo v0, "CAPABILITY_CAN_RETRIEVE_WINDOW_CONTENT"
-
-    return-object v0
-
-    .line 440
-    :pswitch_2
-    const-string/jumbo v0, "CAPABILITY_CAN_REQUEST_TOUCH_EXPLORATION"
-
-    return-object v0
-
-    .line 442
-    :pswitch_3
-    const-string/jumbo v0, "CAPABILITY_CAN_REQUEST_ENHANCED_WEB_ACCESSIBILITY"
-
-    return-object v0
-
-    .line 444
-    :pswitch_4
-    const-string/jumbo v0, "CAPABILITY_CAN_FILTER_KEY_EVENTS"
-
-    return-object v0
-
-    .line 436
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x1
-        :pswitch_1
-        :pswitch_2
-        :pswitch_0
-        :pswitch_3
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_4
-    .end packed-switch
-.end method
-
-.method public static feedbackTypeToString(I)Ljava/lang/String;
-    .locals 4
-    .param p0, "feedbackType"    # I
-
-    .prologue
-    const/4 v3, 0x1
-
-    .line 354
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 355
-    .local v0, "builder":Ljava/lang/StringBuilder;
-    const-string/jumbo v2, "["
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 356
-    :goto_0
-    if-lez p0, :cond_1
-
-    .line 357
-    invoke-static {p0}, Ljava/lang/Integer;->numberOfTrailingZeros(I)I
-
-    move-result v2
-
-    shl-int v1, v3, v2
-
-    .line 358
-    .local v1, "feedbackTypeFlag":I
-    not-int v2, v1
-
-    and-int/2addr p0, v2
-
-    .line 359
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->length()I
-
-    move-result v2
-
-    if-le v2, v3, :cond_0
-
-    .line 360
-    const-string/jumbo v2, ", "
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 362
-    :cond_0
-    sparse-switch v1, :sswitch_data_0
-
-    goto :goto_0
-
-    .line 373
-    :sswitch_0
-    const-string/jumbo v2, "FEEDBACK_SPOKEN"
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    goto :goto_0
-
-    .line 364
-    :sswitch_1
-    const-string/jumbo v2, "FEEDBACK_AUDIBLE"
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    goto :goto_0
-
-    .line 367
-    :sswitch_2
-    const-string/jumbo v2, "FEEDBACK_HAPTIC"
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    goto :goto_0
-
-    .line 370
-    :sswitch_3
-    const-string/jumbo v2, "FEEDBACK_GENERIC"
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    goto :goto_0
-
-    .line 376
-    :sswitch_4
-    const-string/jumbo v2, "FEEDBACK_VISUAL"
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    goto :goto_0
-
-    .line 380
-    .end local v1    # "feedbackTypeFlag":I
-    :cond_1
-    const-string/jumbo v2, "]"
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 381
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    return-object v2
-
-    .line 362
-    :sswitch_data_0
-    .sparse-switch
-        0x1 -> :sswitch_0
-        0x2 -> :sswitch_2
-        0x4 -> :sswitch_1
-        0x8 -> :sswitch_4
-        0x10 -> :sswitch_3
-    .end sparse-switch
-.end method
-
-.method public static flagToString(I)Ljava/lang/String;
-    .locals 1
-    .param p0, "flag"    # I
-
-    .prologue
-    .line 393
-    sparse-switch p0, :sswitch_data_0
-
-    .line 407
-    const/4 v0, 0x0
-
-    return-object v0
-
-    .line 395
-    :sswitch_0
-    const-string/jumbo v0, "DEFAULT"
-
-    return-object v0
-
-    .line 397
-    :sswitch_1
-    const-string/jumbo v0, "FLAG_INCLUDE_NOT_IMPORTANT_VIEWS"
-
-    return-object v0
-
-    .line 399
-    :sswitch_2
-    const-string/jumbo v0, "FLAG_REQUEST_TOUCH_EXPLORATION_MODE"
-
-    return-object v0
-
-    .line 401
-    :sswitch_3
-    const-string/jumbo v0, "FLAG_REQUEST_ENHANCED_WEB_ACCESSIBILITY"
-
-    return-object v0
-
-    .line 403
-    :sswitch_4
-    const-string/jumbo v0, "FLAG_REPORT_VIEW_IDS"
-
-    return-object v0
-
-    .line 405
-    :sswitch_5
-    const-string/jumbo v0, "FLAG_REQUEST_FILTER_KEY_EVENTS"
-
-    return-object v0
-
-    .line 393
-    nop
-
-    :sswitch_data_0
-    .sparse-switch
-        0x1 -> :sswitch_0
-        0x2 -> :sswitch_1
-        0x4 -> :sswitch_2
-        0x8 -> :sswitch_3
-        0x10 -> :sswitch_4
-        0x20 -> :sswitch_5
-    .end sparse-switch
-.end method
-
-.method public static getCanRetrieveWindowContent(Landroid/accessibilityservice/AccessibilityServiceInfo;)Z
-    .locals 1
-    .param p0, "info"    # Landroid/accessibilityservice/AccessibilityServiceInfo;
-
-    .prologue
-    .line 329
-    sget-object v0, Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat;->IMPL:Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoVersionImpl;
-
-    invoke-interface {v0, p0}, Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoVersionImpl;->getCanRetrieveWindowContent(Landroid/accessibilityservice/AccessibilityServiceInfo;)Z
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public static getCapabilities(Landroid/accessibilityservice/AccessibilityServiceInfo;)I
-    .locals 1
-    .param p0, "info"    # Landroid/accessibilityservice/AccessibilityServiceInfo;
-
-    .prologue
-    .line 424
-    sget-object v0, Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat;->IMPL:Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoVersionImpl;
-
-    invoke-interface {v0, p0}, Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoVersionImpl;->getCapabilities(Landroid/accessibilityservice/AccessibilityServiceInfo;)I
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public static getDescription(Landroid/accessibilityservice/AccessibilityServiceInfo;)Ljava/lang/String;
-    .locals 1
-    .param p0, "info"    # Landroid/accessibilityservice/AccessibilityServiceInfo;
-
-    .prologue
-    .line 342
-    sget-object v0, Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat;->IMPL:Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoVersionImpl;
-
-    invoke-interface {v0, p0}, Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoVersionImpl;->getDescription(Landroid/accessibilityservice/AccessibilityServiceInfo;)Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public static getId(Landroid/accessibilityservice/AccessibilityServiceInfo;)Ljava/lang/String;
-    .locals 1
-    .param p0, "info"    # Landroid/accessibilityservice/AccessibilityServiceInfo;
-
-    .prologue
-    .line 291
-    sget-object v0, Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat;->IMPL:Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoVersionImpl;
-
-    invoke-interface {v0, p0}, Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoVersionImpl;->getId(Landroid/accessibilityservice/AccessibilityServiceInfo;)Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public static getResolveInfo(Landroid/accessibilityservice/AccessibilityServiceInfo;)Landroid/content/pm/ResolveInfo;
-    .locals 1
-    .param p0, "info"    # Landroid/accessibilityservice/AccessibilityServiceInfo;
-
-    .prologue
-    .line 303
-    sget-object v0, Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat;->IMPL:Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoVersionImpl;
-
-    invoke-interface {v0, p0}, Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoVersionImpl;->getResolveInfo(Landroid/accessibilityservice/AccessibilityServiceInfo;)Landroid/content/pm/ResolveInfo;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public static getSettingsActivityName(Landroid/accessibilityservice/AccessibilityServiceInfo;)Ljava/lang/String;
-    .locals 1
-    .param p0, "info"    # Landroid/accessibilityservice/AccessibilityServiceInfo;
-
-    .prologue
-    .line 316
-    sget-object v0, Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat;->IMPL:Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoVersionImpl;
-
-    invoke-interface {v0, p0}, Landroid/support/v4/accessibilityservice/AccessibilityServiceInfoCompat$AccessibilityServiceInfoVersionImpl;->getSettingsActivityName(Landroid/accessibilityservice/AccessibilityServiceInfo;)Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
 .end method
